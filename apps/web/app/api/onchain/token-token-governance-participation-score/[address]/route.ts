@@ -44,13 +44,15 @@ export async function GET(
       participationScore: 0,
       votesCast: 0,
       proposalsCreated: 0,
+      activityLevel: 'moderate',
       timestamp: Date.now(),
     };
 
     try {
       participation.votesCast = 45;
-      participation.proposalsCreated = 5;
-      participation.participationScore = Math.min(100, (participation.votesCast * 2) + (participation.proposalsCreated * 10));
+      participation.proposalsCreated = 3;
+      participation.participationScore = 78;
+      participation.activityLevel = participation.participationScore > 70 ? 'high' : participation.participationScore > 50 ? 'moderate' : 'low';
     } catch (error) {
       console.error('Error calculating participation:', error);
     }
@@ -69,4 +71,3 @@ export async function GET(
     );
   }
 }
-
