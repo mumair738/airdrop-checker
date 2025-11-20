@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-smart-contract-verification/[address]
- * Verify smart contract source code and security
+ * Verify smart contract security and authenticity
  */
 export async function GET(
   request: NextRequest,
@@ -26,7 +26,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-smart-contract-verification:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-contract-verification:${normalizedAddress}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -42,7 +42,6 @@ export async function GET(
       contractAddress: normalizedAddress,
       chainId: targetChainId,
       isVerified: false,
-      verificationStatus: 'pending',
       securityScore: 0,
       auditStatus: 'unknown',
       timestamp: Date.now(),
@@ -56,8 +55,7 @@ export async function GET(
 
       if (response.data) {
         verification.isVerified = true;
-        verification.verificationStatus = 'verified';
-        verification.securityScore = 85;
+        verification.securityScore = 80;
         verification.auditStatus = 'audited';
       }
     } catch (error) {
@@ -78,4 +76,3 @@ export async function GET(
     );
   }
 }
-
