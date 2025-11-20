@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-cross-chain-bridge-tracker/[address]
- * Track cross-chain bridge transfers and status
+ * Track cross-chain bridge transfers
  */
 export async function GET(
   request: NextRequest,
@@ -27,7 +27,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-cross-chain-bridge:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-bridge-tracker:${normalizedAddress}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -44,7 +44,7 @@ export async function GET(
       chainId: targetChainId,
       bridgeTransfers: [],
       totalBridged: 0,
-      supportedBridges: [],
+      bridges: [],
       timestamp: Date.now(),
     };
 
@@ -55,23 +55,15 @@ export async function GET(
       );
 
       if (response.data) {
-        tracker.supportedBridges = ['Polygon Bridge', 'Arbitrum Bridge', 'Optimism Bridge'];
-        tracker.totalBridged = parseFloat(response.data.total_supply || '0') * 0.3;
-        tracker.bridgeTransfers = [
-          {
-            bridge: 'Polygon Bridge',
-            amount: tracker.totalBridged / 3,
-            fromChain: 'Ethereum',
-            toChain: 'Polygon',
-            status: 'completed',
-          },
-        ];
+        tracker.bridges = ['Polygon Bridge', 'Arbitrum Bridge', 'Optimism Bridge'];
+        tracker.bridgeTransfers = [];
+        tracker.totalBridged = 0;
       }
     } catch (error) {
       console.error('Error tracking bridge transfers:', error);
     }
 
-    cache.set(cacheKey, tracker, 5 * 60 * 1000);
+    cache.set(cacheKey, tracker, 10 * 60 * 1000);
 
     return NextResponse.json(tracker);
   } catch (error) {
@@ -85,4 +77,3 @@ export async function GET(
     );
   }
 }
-
