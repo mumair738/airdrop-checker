@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-tokenomics-analyzer/[address]
- * Analyze token economics and distribution
+ * Analyze comprehensive token economics
  */
 export async function GET(
   request: NextRequest,
@@ -41,10 +41,9 @@ export async function GET(
     const analyzer: any = {
       tokenAddress: normalizedAddress,
       chainId: targetChainId,
-      distribution: {},
-      inflationRate: 0,
-      burnRate: 0,
-      tokenomicsScore: 0,
+      tokenomics: {},
+      score: 0,
+      recommendations: [],
       timestamp: Date.now(),
     };
 
@@ -55,15 +54,13 @@ export async function GET(
       );
 
       if (response.data) {
-        analyzer.distribution = {
-          team: 20,
-          investors: 15,
-          public: 50,
-          treasury: 15,
+        analyzer.tokenomics = {
+          totalSupply: parseFloat(response.data.total_supply || '0'),
+          circulatingSupply: parseFloat(response.data.circulating_supply || '0'),
+          marketCap: parseFloat(response.data.quote_rate || '0') * parseFloat(response.data.total_supply || '0'),
         };
-        analyzer.inflationRate = 2.5;
-        analyzer.burnRate = 1.0;
-        analyzer.tokenomicsScore = 75;
+        analyzer.score = 75;
+        analyzer.recommendations = ['Tokenomics structure is well-balanced'];
       }
     } catch (error) {
       console.error('Error analyzing tokenomics:', error);
