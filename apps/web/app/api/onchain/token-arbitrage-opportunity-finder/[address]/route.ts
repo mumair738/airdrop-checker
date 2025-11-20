@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { isValidAddress } from '@airdrop-finder/shared';
 import { goldrushClient } from '@/lib/goldrush/client';
-import { SUPPORTED_CHAINS } from '@airdrop-finder/shared';
 import { cache } from '@airdrop-finder/shared';
 
 export const dynamic = 'force-dynamic';
@@ -27,7 +26,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-arbitrage-opportunities:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-arbitrage-opportunity:${normalizedAddress}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -56,9 +55,8 @@ export async function GET(
       if (response.data) {
         finder.opportunities = [
           {
-            dexA: 'Uniswap V2',
-            dexB: 'SushiSwap',
-            priceDiff: 0.5,
+            dexPair: 'Uniswap V2 / Uniswap V3',
+            priceDifference: 0.5,
             profitMargin: 0.3,
             estimatedGas: 150000,
           },
@@ -69,7 +67,7 @@ export async function GET(
       console.error('Error finding arbitrage opportunities:', error);
     }
 
-    cache.set(cacheKey, finder, 1 * 60 * 1000);
+    cache.set(cacheKey, finder, 2 * 60 * 1000);
 
     return NextResponse.json(finder);
   } catch (error) {
@@ -83,4 +81,3 @@ export async function GET(
     );
   }
 }
-
