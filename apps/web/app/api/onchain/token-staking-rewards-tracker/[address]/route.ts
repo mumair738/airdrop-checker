@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-staking-rewards-tracker/[address]
- * Track staking rewards and APY
+ * Track staking APY and reward distributions
  */
 export async function GET(
   request: NextRequest,
@@ -39,12 +39,11 @@ export async function GET(
     const targetChainId = chainId ? parseInt(chainId) : 1;
 
     const tracker: any = {
-      stakingAddress: normalizedAddress,
+      walletAddress: normalizedAddress,
       chainId: targetChainId,
-      stakedAmount: 0,
-      rewardsEarned: 0,
+      stakingPositions: [],
+      totalRewards: 0,
       apy: 0,
-      rewardHistory: [],
       timestamp: Date.now(),
     };
 
@@ -55,15 +54,9 @@ export async function GET(
       );
 
       if (response.data && response.data.items) {
-        tracker.stakedAmount = response.data.items.reduce(
-          (sum: number, token: any) => sum + parseFloat(token.balance || '0'),
-          0
-        );
+        tracker.stakingPositions = [];
         tracker.apy = 12.5;
-        tracker.rewardsEarned = tracker.stakedAmount * (tracker.apy / 100) * (30 / 365);
-        tracker.rewardHistory = [
-          { date: Date.now() - 7 * 24 * 60 * 60 * 1000, amount: tracker.rewardsEarned / 4 },
-        ];
+        tracker.totalRewards = 0;
       }
     } catch (error) {
       console.error('Error tracking staking rewards:', error);
@@ -83,4 +76,3 @@ export async function GET(
     );
   }
 }
-
