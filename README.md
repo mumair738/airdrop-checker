@@ -8,7 +8,7 @@ A comprehensive onchain dashboard that helps users check whether their wallet mi
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## 🎉 966 Production-Ready Features!
+## 🎉 996 Production-Ready Features!
 
 ## ✨ Features
 
@@ -1019,6 +1019,36 @@ All on-chain features require wallet connection via Reown Wallet (formerly Walle
 962. **Token Token Timelock Tracker** - Track timelock delays for proposals
 963. **Token Token Liquidation Price** - Calculate liquidation price for positions
 964. **Token Token Safety Score** - Calculate comprehensive safety score for tokens
+965. **Token Token Delegation Power** - Calculate delegation power for governance tokens
+966. **Token Token Voting Power** - Calculate voting power for governance participation
+967. **Token Token Proposal Creator** - Track proposals created by address
+968. **Token Token Governance Participation Score** - Calculate governance participation score
+969. **Token Token Reward Distribution** - Track reward distribution and allocation
+970. **Token Token Inflation Rate** - Calculate token inflation rate over time
+971. **Token Token Deflation Mechanism** - Track deflation mechanisms and burn rates
+972. **Token Token Treasury Management** - Track treasury management and allocation strategies
+973. **Token Token Yield Aggregator** - Aggregate yield opportunities across protocols
+974. **Token Token Risk Adjusted Return** - Calculate risk-adjusted returns for positions
+975. **Token Token Portfolio Correlation** - Calculate correlation between token and portfolio
+976. **Token Token Market Cap Rank** - Get market cap ranking and position
+977. **Token Token Trading Volume Rank** - Get trading volume ranking
+978. **Token Token Liquidity Rank** - Get liquidity ranking across tokens
+979. **Token Token Price Momentum** - Calculate price momentum indicators
+980. **Token Token Support Resistance** - Identify support and resistance levels
+981. **Token Token Moving Average** - Calculate moving averages for price analysis
+982. **Token Token Bollinger Bands** - Calculate Bollinger Bands for volatility analysis
+983. **Token Token MACD Indicator** - Calculate MACD indicator for trend analysis
+984. **Token Token Stochastic Oscillator** - Calculate Stochastic Oscillator for overbought/oversold
+985. **Token Token Volume Profile** - Analyze volume profile by price levels
+986. **Token Token Order Book Depth** - Analyze order book depth and liquidity
+987. **Token Token Market Maker Spread** - Calculate market maker spreads and efficiency
+988. **Token Token Slippage Estimator** - Estimate slippage for trades of different sizes
+989. **Token Token Arbitrage Opportunity** - Detect arbitrage opportunities across DEXes
+990. **Token Token Liquidity Migration** - Track liquidity migration between pools
+991. **Token Token Pool Concentration** - Analyze liquidity pool concentration and distribution
+992. **Token Token Fee Structure** - Analyze fee structure and revenue model
+993. **Token Token Tokenomics Score** - Calculate comprehensive tokenomics score
+994. **Token Token Adoption Metrics** - Track token adoption metrics and growth indicators
 
 **Access:** All on-chain features are available via API endpoints and require wallet connection via Reown Wallet.
 
@@ -1642,6 +1672,36 @@ All onchain API endpoints are prefixed with `/api/onchain/` and require Reown Wa
 - `GET /api/onchain/token-token-timelock-tracker/[address]` - Track timelock delays
 - `GET /api/onchain/token-token-liquidation-price/[address]` - Calculate liquidation price
 - `GET /api/onchain/token-token-safety-score/[address]` - Calculate safety score
+- `GET /api/onchain/token-token-delegation-power/[address]` - Calculate delegation power
+- `GET /api/onchain/token-token-voting-power/[address]` - Calculate voting power
+- `GET /api/onchain/token-token-proposal-creator/[address]` - Track proposal creators
+- `GET /api/onchain/token-token-governance-participation-score/[address]` - Calculate participation score
+- `GET /api/onchain/token-token-reward-distribution/[address]` - Track reward distribution
+- `GET /api/onchain/token-token-inflation-rate/[address]` - Calculate inflation rate
+- `GET /api/onchain/token-token-deflation-mechanism/[address]` - Track deflation mechanisms
+- `GET /api/onchain/token-token-treasury-management/[address]` - Track treasury management
+- `GET /api/onchain/token-token-yield-aggregator/[address]` - Aggregate yield opportunities
+- `GET /api/onchain/token-token-risk-adjusted-return/[address]` - Calculate risk-adjusted returns
+- `GET /api/onchain/token-token-portfolio-correlation/[address]` - Calculate portfolio correlation
+- `GET /api/onchain/token-token-market-cap-rank/[address]` - Get market cap rank
+- `GET /api/onchain/token-token-trading-volume-rank/[address]` - Get trading volume rank
+- `GET /api/onchain/token-token-liquidity-rank/[address]` - Get liquidity rank
+- `GET /api/onchain/token-token-price-momentum/[address]` - Calculate price momentum
+- `GET /api/onchain/token-token-support-resistance/[address]` - Identify support/resistance
+- `GET /api/onchain/token-token-moving-average/[address]` - Calculate moving averages
+- `GET /api/onchain/token-token-bollinger-bands/[address]` - Calculate Bollinger Bands
+- `GET /api/onchain/token-token-macd-indicator/[address]` - Calculate MACD indicator
+- `GET /api/onchain/token-token-stochastic-oscillator/[address]` - Calculate Stochastic Oscillator
+- `GET /api/onchain/token-token-volume-profile/[address]` - Analyze volume profile
+- `GET /api/onchain/token-token-order-book-depth/[address]` - Analyze order book depth
+- `GET /api/onchain/token-token-market-maker-spread/[address]` - Calculate market maker spread
+- `GET /api/onchain/token-token-slippage-estimator/[address]` - Estimate slippage
+- `GET /api/onchain/token-token-arbitrage-opportunity/[address]` - Detect arbitrage opportunities
+- `GET /api/onchain/token-token-liquidity-migration/[address]` - Track liquidity migration
+- `GET /api/onchain/token-token-pool-concentration/[address]` - Analyze pool concentration
+- `GET /api/onchain/token-token-fee-structure/[address]` - Analyze fee structure
+- `GET /api/onchain/token-token-tokenomics-score/[address]` - Calculate tokenomics score
+- `GET /api/onchain/token-token-adoption-metrics/[address]` - Track adoption metrics
 
 All transaction endpoints return a prepared transaction object that can be executed via Reown Wallet using the `useOnchainTransaction` hook.
 
