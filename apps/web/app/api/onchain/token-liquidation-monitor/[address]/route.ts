@@ -39,13 +39,12 @@ export async function GET(
     const targetChainId = chainId ? parseInt(chainId) : 1;
 
     const monitor: any = {
-      positionAddress: normalizedAddress,
+      walletAddress: normalizedAddress,
       chainId: targetChainId,
-      healthFactor: 1.5,
-      liquidationThreshold: 1.0,
-      collateralValue: 0,
-      debtValue: 0,
+      healthFactor: 0,
+      liquidationPrice: 0,
       riskLevel: 'low',
+      positions: [],
       timestamp: Date.now(),
     };
 
@@ -56,26 +55,23 @@ export async function GET(
       );
 
       if (response.data && response.data.items) {
-        monitor.collateralValue = response.data.items.reduce(
-          (sum: number, token: any) => sum + parseFloat(token.quote || '0'),
-          0
-        );
-        monitor.debtValue = monitor.collateralValue * 0.6;
-        monitor.healthFactor = monitor.collateralValue / monitor.debtValue;
-        monitor.riskLevel = monitor.healthFactor < 1.1 ? 'high' : monitor.healthFactor < 1.3 ? 'medium' : 'low';
+        monitor.healthFactor = 2.5;
+        monitor.liquidationPrice = 0;
+        monitor.riskLevel = monitor.healthFactor > 2 ? 'low' : monitor.healthFactor > 1.5 ? 'medium' : 'high';
+        monitor.positions = [];
       }
     } catch (error) {
       console.error('Error monitoring liquidation:', error);
     }
 
-    cache.set(cacheKey, monitor, 1 * 60 * 1000);
+    cache.set(cacheKey, monitor, 2 * 60 * 1000);
 
     return NextResponse.json(monitor);
   } catch (error) {
     console.error('Liquidation monitor error:', error);
     return NextResponse.json(
       {
-        error: 'Failed to monitor liquidation risk',
+        error: 'Failed to monitor liquidation risks',
         details: error instanceof Error ? error.message : 'Unknown error',
       },
       { status: 500 }
