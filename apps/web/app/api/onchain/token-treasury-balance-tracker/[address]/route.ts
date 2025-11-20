@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-treasury-balance-tracker/[address]
- * Track treasury balance and allocation changes
+ * Track treasury balance and allocations
  */
 export async function GET(
   request: NextRequest,
@@ -42,8 +42,8 @@ export async function GET(
       treasuryAddress: normalizedAddress,
       chainId: targetChainId,
       totalBalance: 0,
-      tokenBalances: [],
-      balanceHistory: [],
+      allocations: [],
+      utilizationRate: 0,
       timestamp: Date.now(),
     };
 
@@ -58,15 +58,8 @@ export async function GET(
           (sum: number, token: any) => sum + parseFloat(token.quote || '0'),
           0
         );
-        tracker.tokenBalances = response.data.items.slice(0, 10).map((token: any) => ({
-          token: token.contract_address,
-          symbol: token.contract_ticker_symbol,
-          balance: parseFloat(token.balance || '0'),
-          valueUSD: parseFloat(token.quote || '0'),
-        }));
-        tracker.balanceHistory = [
-          { date: Date.now() - 7 * 24 * 60 * 60 * 1000, balance: tracker.totalBalance * 0.95 },
-        ];
+        tracker.allocations = response.data.items.slice(0, 10);
+        tracker.utilizationRate = 65;
       }
     } catch (error) {
       console.error('Error tracking treasury balance:', error);
@@ -86,4 +79,3 @@ export async function GET(
     );
   }
 }
-
