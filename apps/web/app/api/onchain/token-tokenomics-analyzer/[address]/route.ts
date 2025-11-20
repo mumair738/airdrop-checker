@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-tokenomics-analyzer/[address]
- * Analyze tokenomics structure and sustainability
+ * Analyze token economics and distribution
  */
 export async function GET(
   request: NextRequest,
@@ -26,7 +26,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-tokenomics:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-tokenomics-analyzer:${normalizedAddress}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -38,12 +38,13 @@ export async function GET(
 
     const targetChainId = chainId ? parseInt(chainId) : 1;
 
-    const analysis: any = {
-      address: normalizedAddress,
+    const analyzer: any = {
+      tokenAddress: normalizedAddress,
       chainId: targetChainId,
-      supplyDistribution: {},
-      sustainabilityScore: 0,
+      distribution: {},
       inflationRate: 0,
+      burnRate: 0,
+      tokenomicsScore: 0,
       timestamp: Date.now(),
     };
 
@@ -54,21 +55,23 @@ export async function GET(
       );
 
       if (response.data) {
-        analysis.supplyDistribution = {
-          circulating: 70,
-          locked: 20,
-          reserved: 10,
+        analyzer.distribution = {
+          team: 20,
+          investors: 15,
+          public: 50,
+          treasury: 15,
         };
-        analysis.sustainabilityScore = 75;
-        analysis.inflationRate = 2.5;
+        analyzer.inflationRate = 2.5;
+        analyzer.burnRate = 1.0;
+        analyzer.tokenomicsScore = 75;
       }
     } catch (error) {
       console.error('Error analyzing tokenomics:', error);
     }
 
-    cache.set(cacheKey, analysis, 10 * 60 * 1000);
+    cache.set(cacheKey, analyzer, 10 * 60 * 1000);
 
-    return NextResponse.json(analysis);
+    return NextResponse.json(analyzer);
   } catch (error) {
     console.error('Tokenomics analyzer error:', error);
     return NextResponse.json(
@@ -80,4 +83,3 @@ export async function GET(
     );
   }
 }
-
