@@ -1,6 +1,6 @@
 # 🎁 Airdrop Checker
 
-A comprehensive onchain dashboard that helps users check whether their wallet might be eligible for ongoing or upcoming airdrops. Users connect their wallet via **Reown Wallet** (formerly WalletConnect) and instantly see a summary of protocols they've interacted with, activity patterns, and how closely they match known airdrop eligibility criteria. The platform includes 682+ onchain transaction and query features, all powered by Reown Wallet for secure, decentralized access.
+A comprehensive onchain dashboard that helps users check whether their wallet might be eligible for ongoing or upcoming airdrops. Users connect their wallet via **Reown Wallet** (formerly WalletConnect) and instantly see a summary of protocols they've interacted with, activity patterns, and how closely they match known airdrop eligibility criteria. The platform includes 712+ onchain transaction and query features, all powered by Reown Wallet for secure, decentralized access.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
@@ -8,7 +8,7 @@ A comprehensive onchain dashboard that helps users check whether their wallet mi
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## 🎉 1026 Production-Ready Features!
+## 🎉 1056 Production-Ready Features!
 
 ## ✨ Features
 
@@ -84,6 +84,35 @@ A comprehensive onchain dashboard that helps users check whether their wallet mi
 - 💼 **Treasury Balance Tracker**: Track treasury allocations
 - 🔄 **Liquidity Migration Tracker**: Track protocol migrations
 - 📸 **Airdrop Snapshot Eligibility**: Check snapshot eligibility
+- 🔒 **Liquidity Lock Duration Tracker**: Track liquidity lock periods for security analysis
+- 🔗 **Pair Creation Tracker**: Monitor DEX pair creation events
+- 📊 **DEX Listing Tracker**: Track token listings across exchanges
+- ⚡ **Slippage Optimizer**: Optimize slippage tolerance for better trade execution
+- 💰 **Gas Rebate Tracker**: Track gas rebates and refunds for holders
+- 📉 **Impermanent Loss Protection**: Calculate protection mechanisms against IL
+- 📊 **Price Impact Calculator**: Analyze price impact for token swaps
+- 🌊 **Liquidity Mining Calculator**: Calculate liquidity mining rewards and APY
+- 📸 **Snapshot Eligibility Checker**: Check wallet eligibility for airdrop snapshots
+- 🗳️ **Voting Power Calculator**: Calculate governance voting power for wallets
+- 📅 **Vesting Unlock Calculator**: Calculate vesting unlock schedules and amounts
+- 🔍 **Oracle Price Aggregator**: Aggregate prices from multiple on-chain oracles
+- ⚠️ **Rug Pull Risk Score**: Comprehensive rug pull risk scoring system
+- 🔧 **Smart Contract Upgrade Tracker**: Track upgrade history and changes
+- 🔐 **Proxy Pattern Detector**: Detect proxy contract patterns and implementations
+- ⏱️ **Multisig Governance Tracker**: Track multi-sig governance operations
+- 💼 **Treasury Management Analyzer**: Analyze treasury management strategies
+- 🔥 **Burn Mechanism Tracker**: Track token burn mechanisms and deflation
+- 💎 **Reflection Mechanism Analyzer**: Analyze reflection mechanisms and rewards
+- 💸 **Tax Mechanism Detector**: Detect and analyze token tax mechanisms
+- 🐋 **Anti-Whale Mechanism Detector**: Detect anti-whale protection mechanisms
+- 📊 **Max Transaction Limit Checker**: Check maximum transaction limits
+- 💼 **Max Wallet Limit Checker**: Check maximum wallet holding limits
+- ⏳ **Cooldown Period Tracker**: Track cooldown periods between transactions
+- ⏸️ **Pause Mechanism Detector**: Detect pause functionality in contracts
+- 🧊 **Freeze Mechanism Detector**: Detect token freeze functionality
+- 🪙 **Minting Cap Tracker**: Track minting caps and supply limits
+- 📈 **Supply Cap Tracker**: Track total supply caps and inflation limits
+- 🔒 **Transfer Restrictions Analyzer**: Analyze transfer restrictions and limitations
 
 ### Developer Features
 - 🧪 **Comprehensive Tests**: 80+ test files with 1000+ test cases
