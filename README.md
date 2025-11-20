@@ -1082,32 +1082,32 @@ All on-chain features require wallet connection via Reown Wallet (formerly Walle
 966. **Token Token Voting Power** - Calculate voting power for governance participation
 967. **Token Token Proposal Creator** - Track proposals created by address
 968. **Token Token Governance Participation Score** - Calculate governance participation score
-969. **Token Token Reward Distribution** - Track reward distribution and allocation
-970. **Token Token Inflation Rate** - Calculate token inflation rate over time
-971. **Token Token Deflation Mechanism** - Track deflation mechanisms and burn rates
-972. **Token Token Treasury Management** - Track treasury management and allocation strategies
-973. **Token Token Yield Aggregator** - Aggregate yield opportunities across protocols
-974. **Token Token Risk Adjusted Return** - Calculate risk-adjusted returns for positions
-975. **Token Token Portfolio Correlation** - Calculate correlation between token and portfolio
-976. **Token Token Market Cap Rank** - Get market cap ranking and position
-977. **Token Token Trading Volume Rank** - Get trading volume ranking
-978. **Token Token Liquidity Rank** - Get liquidity ranking across tokens
-979. **Token Token Price Momentum** - Calculate price momentum indicators
-980. **Token Token Support Resistance** - Identify support and resistance levels
-981. **Token Token Moving Average** - Calculate moving averages for price analysis
-982. **Token Token Bollinger Bands** - Calculate Bollinger Bands for volatility analysis
-983. **Token Token MACD Indicator** - Calculate MACD indicator for trend analysis
-984. **Token Token Stochastic Oscillator** - Calculate Stochastic Oscillator for overbought/oversold
-985. **Token Token Volume Profile** - Analyze volume profile by price levels
-986. **Token Token Order Book Depth** - Analyze order book depth and liquidity
-987. **Token Token Market Maker Spread** - Calculate market maker spreads and efficiency
-988. **Token Token Slippage Estimator** - Estimate slippage for trades of different sizes
-989. **Token Token Arbitrage Opportunity** - Detect arbitrage opportunities across DEXes
-990. **Token Token Liquidity Migration** - Track liquidity migration between pools
-991. **Token Token Pool Concentration** - Analyze liquidity pool concentration and distribution
-992. **Token Token Fee Structure** - Analyze fee structure and revenue model
-993. **Token Token Tokenomics Score** - Calculate comprehensive tokenomics score
-994. **Token Token Adoption Metrics** - Track token adoption metrics and growth indicators
+969. **Token Token Rewards Distribution** - Track token rewards distribution and claims
+970. **Token Token Staking Rewards Optimizer** - Optimize staking rewards across protocols
+971. **Token Token Yield Aggregator** - Aggregate yield opportunities across DeFi protocols
+972. **Token Token Compound Interest** - Calculate compound interest for staking positions
+973. **Token Token Rebase Tracker** - Track rebase events and supply adjustments
+974. **Token Token Inflation Rate** - Calculate token inflation rate over time
+975. **Token Token Deflation Mechanism** - Track deflation mechanisms and burn events
+976. **Token Token Tokenomics Model** - Analyze tokenomics model and economic structure
+977. **Token Token Emission Schedule** - Track token emission schedule and release timeline
+978. **Token Token Vesting Analyzer** - Analyze vesting schedules and unlock patterns
+979. **Token Token Lockup Analyzer** - Analyze token lockup periods and restrictions
+980. **Token Token Transfer Restrictions** - Detect transfer restrictions and limitations
+981. **Token Token Whitelist Checker** - Check if address is whitelisted for token operations
+982. **Token Token Blacklist Detector** - Detect blacklisted addresses and restrictions
+983. **Token Token Pause Detector** - Detect if token contract is paused
+984. **Token Token Freeze Detector** - Detect frozen accounts and balance restrictions
+985. **Token Token Permission Manager** - Track permissions and access controls
+986. **Token Token Role Assignment** - Track role assignments and access rights
+987. **Token Token Cap Enforcer** - Check supply cap enforcement and limits
+988. **Token Token Mint Limits** - Track minting limits and restrictions
+989. **Token Token Burn Limits** - Track burning limits and constraints
+990. **Token Token Tax Calculator** - Calculate token taxes and fees on transactions
+991. **Token Token Reflection Tracker** - Track reflection rewards and passive income
+992. **Token Token Dividend Tracker** - Track dividend distributions and payments
+993. **Token Token Auto Compound** - Calculate auto-compounding benefits and optimal frequency
+994. **Token Token Rewards Claim Optimizer** - Optimize rewards claiming strategy for gas efficiency
 
 **Access:** All on-chain features are available via API endpoints and require wallet connection via Reown Wallet.
 
@@ -1735,32 +1735,32 @@ All onchain API endpoints are prefixed with `/api/onchain/` and require Reown Wa
 - `GET /api/onchain/token-token-voting-power/[address]` - Calculate voting power
 - `GET /api/onchain/token-token-proposal-creator/[address]` - Track proposal creators
 - `GET /api/onchain/token-token-governance-participation-score/[address]` - Calculate participation score
-- `GET /api/onchain/token-token-reward-distribution/[address]` - Track reward distribution
+- `GET /api/onchain/token-token-rewards-distribution/[address]` - Track rewards distribution
+- `GET /api/onchain/token-token-staking-rewards-optimizer/[address]` - Optimize staking rewards
+- `GET /api/onchain/token-token-yield-aggregator/[address]` - Aggregate yield opportunities
+- `GET /api/onchain/token-token-compound-interest/[address]` - Calculate compound interest
+- `GET /api/onchain/token-token-rebase-tracker/[address]` - Track rebase events
 - `GET /api/onchain/token-token-inflation-rate/[address]` - Calculate inflation rate
 - `GET /api/onchain/token-token-deflation-mechanism/[address]` - Track deflation mechanisms
-- `GET /api/onchain/token-token-treasury-management/[address]` - Track treasury management
-- `GET /api/onchain/token-token-yield-aggregator/[address]` - Aggregate yield opportunities
-- `GET /api/onchain/token-token-risk-adjusted-return/[address]` - Calculate risk-adjusted returns
-- `GET /api/onchain/token-token-portfolio-correlation/[address]` - Calculate portfolio correlation
-- `GET /api/onchain/token-token-market-cap-rank/[address]` - Get market cap rank
-- `GET /api/onchain/token-token-trading-volume-rank/[address]` - Get trading volume rank
-- `GET /api/onchain/token-token-liquidity-rank/[address]` - Get liquidity rank
-- `GET /api/onchain/token-token-price-momentum/[address]` - Calculate price momentum
-- `GET /api/onchain/token-token-support-resistance/[address]` - Identify support/resistance
-- `GET /api/onchain/token-token-moving-average/[address]` - Calculate moving averages
-- `GET /api/onchain/token-token-bollinger-bands/[address]` - Calculate Bollinger Bands
-- `GET /api/onchain/token-token-macd-indicator/[address]` - Calculate MACD indicator
-- `GET /api/onchain/token-token-stochastic-oscillator/[address]` - Calculate Stochastic Oscillator
-- `GET /api/onchain/token-token-volume-profile/[address]` - Analyze volume profile
-- `GET /api/onchain/token-token-order-book-depth/[address]` - Analyze order book depth
-- `GET /api/onchain/token-token-market-maker-spread/[address]` - Calculate market maker spread
-- `GET /api/onchain/token-token-slippage-estimator/[address]` - Estimate slippage
-- `GET /api/onchain/token-token-arbitrage-opportunity/[address]` - Detect arbitrage opportunities
-- `GET /api/onchain/token-token-liquidity-migration/[address]` - Track liquidity migration
-- `GET /api/onchain/token-token-pool-concentration/[address]` - Analyze pool concentration
-- `GET /api/onchain/token-token-fee-structure/[address]` - Analyze fee structure
-- `GET /api/onchain/token-token-tokenomics-score/[address]` - Calculate tokenomics score
-- `GET /api/onchain/token-token-adoption-metrics/[address]` - Track adoption metrics
+- `GET /api/onchain/token-token-tokenomics-model/[address]` - Analyze tokenomics model
+- `GET /api/onchain/token-token-emission-schedule/[address]` - Track emission schedule
+- `GET /api/onchain/token-token-vesting-analyzer/[address]` - Analyze vesting schedules
+- `GET /api/onchain/token-token-lockup-analyzer/[address]` - Analyze lockup periods
+- `GET /api/onchain/token-token-transfer-restrictions/[address]` - Detect transfer restrictions
+- `GET /api/onchain/token-token-whitelist-checker/[address]` - Check whitelist status
+- `GET /api/onchain/token-token-blacklist-detector/[address]` - Detect blacklisted addresses
+- `GET /api/onchain/token-token-pause-detector/[address]` - Detect pause status
+- `GET /api/onchain/token-token-freeze-detector/[address]` - Detect freeze status
+- `GET /api/onchain/token-token-permission-manager/[address]` - Track permissions
+- `GET /api/onchain/token-token-role-assignment/[address]` - Track role assignments
+- `GET /api/onchain/token-token-cap-enforcer/[address]` - Check supply cap
+- `GET /api/onchain/token-token-mint-limits/[address]` - Track mint limits
+- `GET /api/onchain/token-token-burn-limits/[address]` - Track burn limits
+- `GET /api/onchain/token-token-tax-calculator/[address]` - Calculate token taxes
+- `GET /api/onchain/token-token-reflection-tracker/[address]` - Track reflection rewards
+- `GET /api/onchain/token-token-dividend-tracker/[address]` - Track dividend distributions
+- `GET /api/onchain/token-token-auto-compound/[address]` - Calculate auto-compound benefits
+- `GET /api/onchain/token-token-rewards-claim-optimizer/[address]` - Optimize rewards claiming
 
 All transaction endpoints return a prepared transaction object that can be executed via Reown Wallet using the `useOnchainTransaction` hook.
 
