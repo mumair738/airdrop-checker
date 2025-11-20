@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-market-maker-detector/[address]
- * Detect market maker activity and patterns
+ * Detect market maker activity patterns
  */
 export async function GET(
   request: NextRequest,
@@ -42,40 +42,28 @@ export async function GET(
       walletAddress: normalizedAddress,
       chainId: targetChainId,
       isMarketMaker: false,
-      mmScore: 0,
-      tradingPatterns: [],
-      activityMetrics: {},
+      activityScore: 0,
+      patterns: [],
       timestamp: Date.now(),
     };
 
     try {
       const response = await goldrushClient.get(
         `/v2/${targetChainId}/addresses/${normalizedAddress}/transactions/`,
-        { 'quote-currency': 'USD', 'page-size': 100 }
+        { 'quote-currency': 'USD', 'page-size': 50 }
       );
 
       if (response.data && response.data.items) {
         const txCount = response.data.items.length;
-        const avgValue = response.data.items.reduce(
-          (sum: number, tx: any) => sum + parseFloat(tx.value_quote || '0'),
-          0
-        ) / txCount;
-        detector.mmScore = txCount > 50 && avgValue > 1000 ? 75 : 30;
-        detector.isMarketMaker = detector.mmScore > 60;
-        detector.tradingPatterns = detector.isMarketMaker
-          ? ['High frequency trading', 'Consistent volume', 'Bid-ask spread management']
-          : [];
-        detector.activityMetrics = {
-          transactionCount: txCount,
-          averageValue: avgValue,
-          frequency: 'high',
-        };
+        detector.activityScore = Math.min(txCount * 2, 100);
+        detector.isMarketMaker = txCount > 100;
+        detector.patterns = detector.isMarketMaker ? ['High frequency trading detected'] : [];
       }
     } catch (error) {
       console.error('Error detecting market maker:', error);
     }
 
-    cache.set(cacheKey, detector, 10 * 60 * 1000);
+    cache.set(cacheKey, detector, 5 * 60 * 1000);
 
     return NextResponse.json(detector);
   } catch (error) {
@@ -89,4 +77,3 @@ export async function GET(
     );
   }
 }
-
