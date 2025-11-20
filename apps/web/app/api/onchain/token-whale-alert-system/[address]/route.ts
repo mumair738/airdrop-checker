@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-whale-alert-system/[address]
- * Alert system for large whale movements
+ * Alert system for large token movements
  */
 export async function GET(
   request: NextRequest,
@@ -17,6 +17,7 @@ export async function GET(
     const { address } = await params;
     const searchParams = request.nextUrl.searchParams;
     const chainId = searchParams.get('chainId');
+    const threshold = parseFloat(searchParams.get('threshold') || '100000');
 
     if (!isValidAddress(address)) {
       return NextResponse.json(
@@ -26,7 +27,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-whale-alert:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-whale-alert:${normalizedAddress}:${threshold}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -41,7 +42,7 @@ export async function GET(
     const alert: any = {
       tokenAddress: normalizedAddress,
       chainId: targetChainId,
-      whaleThreshold: 100000,
+      threshold,
       recentMovements: [],
       alerts: [],
       timestamp: Date.now(),
@@ -55,16 +56,10 @@ export async function GET(
 
       if (response.data && response.data.items) {
         const largeTxs = response.data.items.filter(
-          (tx: any) => parseFloat(tx.value_quote || '0') > alert.whaleThreshold
+          (tx: any) => parseFloat(tx.value_quote || '0') > threshold
         );
-        alert.recentMovements = largeTxs.slice(0, 5).map((tx: any) => ({
-          txHash: tx.tx_hash,
-          value: parseFloat(tx.value_quote || '0'),
-          from: tx.from_address,
-          to: tx.to_address,
-          timestamp: tx.block_signed_at,
-        }));
-        alert.alerts = largeTxs.length > 0 ? ['Large whale movement detected'] : [];
+        alert.recentMovements = largeTxs.slice(0, 10);
+        alert.alerts = largeTxs.length > 0 ? ['Large movements detected'] : [];
       }
     } catch (error) {
       console.error('Error monitoring whale movements:', error);
@@ -84,4 +79,3 @@ export async function GET(
     );
   }
 }
-
