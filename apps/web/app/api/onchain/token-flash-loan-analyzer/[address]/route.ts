@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-flash-loan-analyzer/[address]
- * Analyze flash loan usage and opportunities
+ * Analyze flash loan opportunities and costs
  */
 export async function GET(
   request: NextRequest,
@@ -41,10 +41,9 @@ export async function GET(
     const analyzer: any = {
       tokenAddress: normalizedAddress,
       chainId: targetChainId,
-      availableFlashLoans: [],
-      flashLoanFee: 0.09,
+      availableProtocols: [],
+      fees: {},
       maxAmount: 0,
-      opportunities: [],
       timestamp: Date.now(),
     };
 
@@ -55,12 +54,9 @@ export async function GET(
       );
 
       if (response.data) {
-        analyzer.maxAmount = parseFloat(response.data.total_liquidity_quote || '0') * 0.8;
-        analyzer.availableFlashLoans = [
-          { protocol: 'Aave', fee: 0.09, maxAmount: analyzer.maxAmount },
-          { protocol: 'dYdX', fee: 0, maxAmount: analyzer.maxAmount * 0.5 },
-        ];
-        analyzer.opportunities = ['Arbitrage', 'Liquidation', 'Collateral swap'];
+        analyzer.availableProtocols = ['Aave', 'dYdX', 'Uniswap'];
+        analyzer.fees = { aave: 0.09, dydx: 0.0, uniswap: 0.3 };
+        analyzer.maxAmount = parseFloat(response.data.total_liquidity_quote || '0') * 0.5;
       }
     } catch (error) {
       console.error('Error analyzing flash loans:', error);
