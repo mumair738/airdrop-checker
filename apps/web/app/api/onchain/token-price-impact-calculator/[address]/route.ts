@@ -44,8 +44,8 @@ export async function GET(
       chainId: targetChainId,
       amount,
       priceImpact: 0,
-      estimatedPrice: 0,
-      recommendations: [],
+      executionPrice: 0,
+      optimalAmount: 0,
       timestamp: Date.now(),
     };
 
@@ -57,14 +57,9 @@ export async function GET(
 
       if (response.data) {
         const liquidity = parseFloat(response.data.total_liquidity_quote || '0');
-        const currentPrice = parseFloat(response.data.quote_rate || '0');
         calculator.priceImpact = liquidity > 0 ? (amount / liquidity) * 100 : 5.0;
-        calculator.estimatedPrice = currentPrice * (1 - calculator.priceImpact / 100);
-        calculator.recommendations = [
-          calculator.priceImpact > 3
-            ? 'High price impact - consider splitting order'
-            : 'Price impact is acceptable',
-        ];
+        calculator.executionPrice = parseFloat(response.data.quote_rate || '0') * (1 - calculator.priceImpact / 100);
+        calculator.optimalAmount = liquidity * 0.01; // 1% of liquidity
       }
     } catch (error) {
       console.error('Error calculating price impact:', error);
