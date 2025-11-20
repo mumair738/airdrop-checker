@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-liquidity-pool-health-monitor/[address]
- * Monitor health metrics of liquidity pools
+ * Monitor liquidity pool health metrics
  */
 export async function GET(
   request: NextRequest,
@@ -26,7 +26,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const cacheKey = `onchain-liquidity-pool-health:${normalizedAddress}:${chainId || 'all'}`;
+    const cacheKey = `onchain-pool-health:${normalizedAddress}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -39,12 +39,11 @@ export async function GET(
     const targetChainId = chainId ? parseInt(chainId) : 1;
 
     const monitor: any = {
-      poolAddress: normalizedAddress,
+      tokenAddress: normalizedAddress,
       chainId: targetChainId,
       healthScore: 0,
-      liquidityRatio: 0,
-      volumeRatio: 0,
       metrics: {},
+      warnings: [],
       timestamp: Date.now(),
     };
 
@@ -56,15 +55,13 @@ export async function GET(
 
       if (response.data) {
         const liquidity = parseFloat(response.data.total_liquidity_quote || '0');
-        const volume = parseFloat(response.data.total_volume_24h || '0');
-        monitor.liquidityRatio = liquidity > 0 ? volume / liquidity : 0;
-        monitor.volumeRatio = volume > 0 ? liquidity / volume : 0;
-        monitor.healthScore = Math.min(100, (monitor.liquidityRatio * 50 + monitor.volumeRatio * 50));
+        monitor.healthScore = liquidity > 100000 ? 85 : liquidity > 50000 ? 70 : 50;
         monitor.metrics = {
-          liquidity: liquidity,
-          volume24h: volume,
-          priceStability: monitor.healthScore > 70 ? 'stable' : 'volatile',
+          liquidity,
+          volume24h: parseFloat(response.data.total_volume_24h || '0'),
+          priceStability: 'stable',
         };
+        monitor.warnings = monitor.healthScore < 60 ? ['Low liquidity detected'] : [];
       }
     } catch (error) {
       console.error('Error monitoring pool health:', error);
@@ -84,4 +81,3 @@ export async function GET(
     );
   }
 }
-
