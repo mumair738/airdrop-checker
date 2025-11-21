@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 /**
  * GET /api/onchain/token-price-impact-calculator/[address]
- * Calculate price impact for different trade sizes
+ * Calculate price impact for token swaps
  */
 export async function GET(
   request: NextRequest,
@@ -17,7 +17,7 @@ export async function GET(
     const { address } = await params;
     const searchParams = request.nextUrl.searchParams;
     const chainId = searchParams.get('chainId');
-    const tradeSize = searchParams.get('tradeSize') || '1000';
+    const amount = parseFloat(searchParams.get('amount') || '1000');
 
     if (!isValidAddress(address)) {
       return NextResponse.json(
@@ -27,8 +27,7 @@ export async function GET(
     }
 
     const normalizedAddress = address.toLowerCase();
-    const tradeAmount = parseFloat(tradeSize);
-    const cacheKey = `onchain-price-impact-calc:${normalizedAddress}:${chainId || 'all'}:${tradeAmount}`;
+    const cacheKey = `onchain-price-impact:${normalizedAddress}:${amount}:${chainId || 'all'}`;
     const cachedResult = cache.get(cacheKey);
 
     if (cachedResult) {
@@ -40,13 +39,13 @@ export async function GET(
 
     const targetChainId = chainId ? parseInt(chainId) : 1;
 
-    const impact: any = {
+    const calculator: any = {
       tokenAddress: normalizedAddress,
       chainId: targetChainId,
-      tradeSize: tradeAmount,
+      amount,
       priceImpact: 0,
-      slippage: 0,
-      recommendedMaxSize: 0,
+      executionPrice: 0,
+      optimalAmount: 0,
       timestamp: Date.now(),
     };
 
@@ -58,19 +57,17 @@ export async function GET(
 
       if (response.data) {
         const liquidity = parseFloat(response.data.total_liquidity_quote || '0');
-        if (liquidity > 0) {
-          impact.priceImpact = (tradeAmount / liquidity) * 100;
-          impact.slippage = impact.priceImpact * 0.5;
-          impact.recommendedMaxSize = liquidity * 0.05;
-        }
+        calculator.priceImpact = liquidity > 0 ? (amount / liquidity) * 100 : 5.0;
+        calculator.executionPrice = parseFloat(response.data.quote_rate || '0') * (1 - calculator.priceImpact / 100);
+        calculator.optimalAmount = liquidity * 0.01; // 1% of liquidity
       }
     } catch (error) {
-      console.error('Error calculating impact:', error);
+      console.error('Error calculating price impact:', error);
     }
 
-    cache.set(cacheKey, impact, 2 * 60 * 1000);
+    cache.set(cacheKey, calculator, 2 * 60 * 1000);
 
-    return NextResponse.json(impact);
+    return NextResponse.json(calculator);
   } catch (error) {
     console.error('Price impact calculator error:', error);
     return NextResponse.json(

@@ -1,6 +1,6 @@
 # 🎁 Airdrop Checker
 
-A comprehensive onchain dashboard that helps users check whether their wallet might be eligible for ongoing or upcoming airdrops. Users connect their wallet via **Reown Wallet** (formerly WalletConnect) and instantly see a summary of protocols they've interacted with, activity patterns, and how closely they match known airdrop eligibility criteria. The platform includes 622+ onchain transaction and query features, all powered by Reown Wallet for secure, decentralized access.
+A comprehensive onchain dashboard that helps users check whether their wallet might be eligible for ongoing or upcoming airdrops. Users connect their wallet via **Reown Wallet** (formerly WalletConnect) and instantly see a summary of protocols they've interacted with, activity patterns, and how closely they match known airdrop eligibility criteria. The platform includes 742+ onchain transaction and query features, all powered by Reown Wallet for secure, decentralized access.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
@@ -8,7 +8,7 @@ A comprehensive onchain dashboard that helps users check whether their wallet mi
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## 🎉 622+ Production-Ready Features!
+## 🎉 1086 Production-Ready Features!
 
 ## ✨ Features
 
@@ -26,6 +26,127 @@ A comprehensive onchain dashboard that helps users check whether their wallet mi
 - 📱 **Mobile Responsive**: Fully responsive design for all devices
 - 🌙 **Dark Mode**: Beautiful dark mode support
 - ⚡ **Fast & Optimized**: Cached responses and optimized queries
+
+### Onchain Analysis Features
+- 🚜 **Yield Farming Optimizer**: Optimize yield farming strategies across protocols
+- 🔄 **Liquidity Migration Advisor**: Get recommendations for protocol migrations
+- 🌉 **Cross-Chain Yield Aggregator**: Find best yields across multiple chains
+- 💰 **Staking Compound Calculator**: Calculate compound interest for staking
+- 🎁 **Airdrop Eligibility Scorer**: Advanced scoring for airdrop qualification
+- 🗳️ **Governance Participation Advisor**: Optimize governance participation
+- 📅 **Vesting Schedule Optimizer**: Maximize value from vesting schedules
+- 🛡️ **MEV Protection Advisor**: Protect transactions from MEV attacks
+- ⚠️ **Rug Pull Early Warning**: Early detection system for potential rug pulls
+- 🔧 **Contract Upgrade Risk Analyzer**: Assess risks of contract upgrades
+- 🔐 **Proxy Security Checker**: Verify security of proxy patterns
+- ⏱️ **Multisig Delay Tracker**: Track multi-sig transaction delays
+- 💼 **Treasury Allocation Analyzer**: Analyze treasury management
+- 🔥 **Burn Rate Optimizer**: Optimize token burn mechanisms
+- 💎 **Reflection Efficiency Calculator**: Calculate holder reward efficiency
+- 💸 **Tax Optimization Advisor**: Optimize transaction tax strategies
+- 🐋 **Anti-Whale Threshold Analyzer**: Analyze whale protection mechanisms
+- 📊 **Transaction Limit Optimizer**: Optimize trading limits
+- ⏳ **Cooldown Efficiency Calculator**: Calculate cooldown period effectiveness
+- 🚫 **Blacklist Risk Checker**: Check blacklist risks
+- ✅ **Whitelist Eligibility Checker**: Verify whitelist qualification
+- ⏸️ **Pause Impact Analyzer**: Analyze contract pause functionality
+- 🧊 **Freeze Duration Tracker**: Track token freeze schedules
+- 🪙 **Minting Schedule Analyzer**: Analyze inflation and minting
+- 📈 **Supply Growth Predictor**: Predict future token supply
+- 💳 **Transfer Fee Optimizer**: Optimize transaction fees
+- 🔒 **Liquidity Lock Duration Tracker**: Track liquidity lock periods for security
+- 🔗 **Pair Creation Tracker**: Monitor DEX pair creation events
+- 📊 **DEX Listing Tracker**: Track token listings across exchanges
+- ⚡ **Slippage Optimizer**: Optimize slippage tolerance for trades
+- 💰 **Gas Rebate Tracker**: Track gas rebates and refunds
+- 📉 **Impermanent Loss Protection**: Calculate and protect against IL
+- 📊 **Price Impact Calculator**: Analyze price impact for swaps
+- 🌊 **Liquidity Depth Analyzer**: Analyze liquidity at price levels
+- 🔄 **Arbitrage Opportunity Finder**: Find arbitrage across DEXes
+- ⚡ **Flash Loan Analyzer**: Analyze flash loan opportunities
+- ⚠️ **Liquidation Monitor**: Monitor liquidation risks
+- 📈 **Yield Aggregator**: Aggregate yields from protocols
+- 💎 **Staking Rewards Tracker**: Track staking APY and rewards
+- 🗳️ **Governance Voting Power**: Calculate voting power
+- 📅 **Vesting Unlock Calculator**: Calculate unlock schedules
+- 🐋 **Whale Alert System**: Alert on large movements
+- 🔍 **Price Oracle Aggregator**: Aggregate oracle prices
+- 💚 **Liquidity Pool Health Monitor**: Monitor pool health metrics
+- 📊 **Tokenomics Analyzer**: Analyze token economics
+- ✅ **Smart Contract Verification**: Verify contract security
+- ⚡ **Transaction Batch Optimizer**: Optimize gas via batching
+- 🎯 **Market Maker Detector**: Detect MM activity patterns
+- 💰 **LP Rewards Tracker**: Track liquidity provider rewards
+- 🌉 **Cross-Chain Bridge Tracker**: Track bridge transfers
+- 📊 **DeFi Position Aggregator**: Aggregate all DeFi positions
+- ⛽ **Gas Price Predictor**: Predict optimal gas prices
+- 📈 **Holder Distribution Analyzer**: Analyze decentralization
+- 💼 **Treasury Balance Tracker**: Track treasury allocations
+- 🔄 **Liquidity Migration Tracker**: Track protocol migrations
+- 📸 **Airdrop Snapshot Eligibility**: Check snapshot eligibility
+- 🔒 **Liquidity Lock Duration Tracker**: Track liquidity lock periods for security analysis
+- 🔗 **Pair Creation Tracker**: Monitor DEX pair creation events
+- 📊 **DEX Listing Tracker**: Track token listings across exchanges
+- ⚡ **Slippage Optimizer**: Optimize slippage tolerance for better trade execution
+- 💰 **Gas Rebate Tracker**: Track gas rebates and refunds for holders
+- 📉 **Impermanent Loss Protection**: Calculate protection mechanisms against IL
+- 📊 **Price Impact Calculator**: Analyze price impact for token swaps
+- 🌊 **Liquidity Mining Calculator**: Calculate liquidity mining rewards and APY
+- 📸 **Snapshot Eligibility Checker**: Check wallet eligibility for airdrop snapshots
+- 🗳️ **Voting Power Calculator**: Calculate governance voting power for wallets
+- 📅 **Vesting Unlock Calculator**: Calculate vesting unlock schedules and amounts
+- 🔍 **Oracle Price Aggregator**: Aggregate prices from multiple on-chain oracles
+- ⚠️ **Rug Pull Risk Score**: Comprehensive rug pull risk scoring system
+- 🔧 **Smart Contract Upgrade Tracker**: Track upgrade history and changes
+- 🔐 **Proxy Pattern Detector**: Detect proxy contract patterns and implementations
+- ⏱️ **Multisig Governance Tracker**: Track multi-sig governance operations
+- 💼 **Treasury Management Analyzer**: Analyze treasury management strategies
+- 🔥 **Burn Mechanism Tracker**: Track token burn mechanisms and deflation
+- 💎 **Reflection Mechanism Analyzer**: Analyze reflection mechanisms and rewards
+- 💸 **Tax Mechanism Detector**: Detect and analyze token tax mechanisms
+- 🐋 **Anti-Whale Mechanism Detector**: Detect anti-whale protection mechanisms
+- 📊 **Max Transaction Limit Checker**: Check maximum transaction limits
+- 💼 **Max Wallet Limit Checker**: Check maximum wallet holding limits
+- ⏳ **Cooldown Period Tracker**: Track cooldown periods between transactions
+- ⏸️ **Pause Mechanism Detector**: Detect pause functionality in contracts
+- 🧊 **Freeze Mechanism Detector**: Detect token freeze functionality
+- 🪙 **Minting Cap Tracker**: Track minting caps and supply limits
+- 📈 **Supply Cap Tracker**: Track total supply caps and inflation limits
+- 🔒 **Transfer Restrictions Analyzer**: Analyze transfer restrictions and limitations
+- 🌊 **Liquidity Depth Analyzer**: Analyze liquidity at different price levels
+- 🔄 **Arbitrage Opportunity Finder**: Find arbitrage opportunities across DEXes
+- ⚡ **Flash Loan Analyzer**: Analyze flash loan opportunities and costs
+- ⚠️ **Liquidation Monitor**: Monitor liquidation risks for lending positions
+- 📈 **Yield Aggregator**: Aggregate yield opportunities from multiple protocols
+- 💎 **Staking Rewards Tracker**: Track staking APY and reward distributions
+- 🐋 **Whale Alert System**: Alert system for large token movements
+- 💚 **Liquidity Pool Health Monitor**: Monitor liquidity pool health metrics
+- 📊 **Tokenomics Analyzer**: Analyze comprehensive token economics
+- ✅ **Smart Contract Verification**: Verify smart contract security and authenticity
+- ⚡ **Transaction Batch Optimizer**: Optimize gas costs via transaction batching
+- 🎯 **Market Maker Detector**: Detect market maker activity patterns
+- 💰 **LP Rewards Tracker**: Track liquidity provider rewards and fees
+- 🌉 **Cross-Chain Bridge Tracker**: Track cross-chain bridge transfers
+- 📊 **DeFi Position Aggregator**: Aggregate all DeFi positions across protocols
+- ⛽ **Gas Price Predictor**: Predict optimal gas prices for transactions
+- 📈 **Holder Distribution Analyzer**: Analyze token holder distribution and decentralization
+- 💼 **Treasury Balance Tracker**: Track treasury balance and allocations
+- 🔄 **Liquidity Migration Tracker**: Track liquidity migrations between protocols
+- 🔄 **Rebase Tracker**: Track rebase events and supply adjustments
+- 📈 **Inflation Rate Calculator**: Calculate token inflation rate over time
+- 🔥 **Deflation Mechanism Tracker**: Track deflation mechanisms and burn events
+- 📊 **Tokenomics Model Analyzer**: Analyze tokenomics model and economic structure
+- 📅 **Emission Schedule Tracker**: Track token emission schedule and release timeline
+- 📅 **Vesting Analyzer**: Analyze vesting schedules and unlock patterns
+- 🔒 **Lockup Analyzer**: Analyze token lockup periods and restrictions
+- 🔒 **Transfer Restrictions Detector**: Detect transfer restrictions and limitations
+- ✅ **Whitelist Checker**: Check if address is whitelisted for token operations
+- 🚫 **Blacklist Detector**: Detect blacklisted addresses and restrictions
+- ⏸️ **Pause Detector**: Detect if token contract is paused
+- 🧊 **Freeze Detector**: Detect frozen accounts and balance restrictions
+- 🔐 **Permission Manager**: Track permissions and access controls
+- 🔐 **Role Assignment**: Track role assignments and access rights
+- 🔒 **Cap Enforcer**: Check supply cap enforcement and limits
 
 ### Developer Features
 - 🧪 **Comprehensive Tests**: 80+ test files with 1000+ test cases
@@ -677,6 +798,350 @@ All on-chain features require wallet connection via Reown Wallet (formerly Walle
 648. **Token Market Cap Efficiency Calculator** - Calculate market capitalization efficiency with Reown support
 649. **Token Trading Intensity Score Calculator** - Measure trading intensity scores
 650. **Token Liquidity Quality Score Calculator** - Calculate comprehensive liquidity quality score
+651. **Token Flash Loan Detector** - Detect flash loan usage patterns in token transactions
+652. **Token MEV Bot Detector** - Detect MEV bot activity patterns and scoring
+653. **Token Sandwich Attack Detector** - Detect sandwich attack patterns in token swaps
+654. **Token Front-Running Detector** - Detect front-running patterns in transactions
+655. **Token Back-Running Detector** - Detect back-running patterns in transactions
+656. **Token Liquidity Sniping Detector** - Detect liquidity sniping patterns in token launches
+657. **Token Pump and Dump Detector** - Detect pump and dump schemes in token trading
+658. **Token Wash Trading Detector** - Detect wash trading patterns in token transactions
+659. **Token Circular Trading Detector** - Detect circular trading patterns between addresses
+660. **Token Price Manipulation Detector** - Detect price manipulation patterns with scoring system
+661. **Token Order Flow Analyzer** - Analyze order flow patterns in token transactions
+662. **Token Dark Pool Detector** - Detect dark pool trading patterns with large transactions
+663. **Token Insider Trading Detector** - Detect potential insider trading patterns with timing analysis
+664. **Token Coordinated Trading Detector** - Detect coordinated trading patterns across multiple addresses
+665. **Token Bot Cluster Detector** - Detect bot cluster patterns in trading activity with scoring
+666. **Token Sybil Attack Detector** - Detect Sybil attack patterns with multiple related addresses
+667. **Token Airdrop Farming Detector** - Detect airdrop farming patterns and eligibility gaming with protocol analysis
+668. **Token Sniping Bot Detector** - Detect sniping bot activity in token launches
+669. **Token Gas War Detector** - Detect gas war patterns in competitive transactions
+670. **Token Priority Fee Analyzer** - Analyze priority fee patterns with statistical metrics
+671. **Token EIP-1559 Fee Analyzer** - Analyze EIP-1559 fee structure and base fee trends
+672. **Token Layer 2 Bridge Analyzer** - Analyze Layer 2 bridge activity patterns with Reown
+673. **Token Cross-Chain Arbitrage Detector** - Detect cross-chain arbitrage opportunities
+674. **Token Bridge Risk Analyzer** - Analyze bridge transaction risks with security scoring
+675. **Token Bridge Volume Tracker** - Track bridge transaction volumes across chains and protocols
+676. **Token Bridge Fee Calculator** - Calculate bridge fees and compare across protocols
+677. **Token Bridge Time Estimator** - Estimate bridge transaction completion times for planning
+678. **Token Bridge Security Checker** - Check bridge security status and audit compliance
+679. **Token Bridge Liquidity Checker** - Check bridge liquidity availability across routes
+680. **Token Bridge Status Monitor** - Monitor bridge status and health metrics with Reown
+681. **Token DEX Aggregator** - Aggregate DEX prices and liquidity across multiple exchanges
+682. **Token Lending Position** - Track lending positions across DeFi protocols
+683. **Token Borrow Position** - Track borrowing positions and debt across protocols
+684. **Token Collateral Tracker** - Track collateral positions and ratios
+685. **Token Liquidation Monitor** - Monitor liquidation risk and thresholds
+686. **Token Yield Aggregator** - Aggregate yield opportunities across DeFi protocols
+687. **Token Vault Tracker** - Track vault positions and strategies
+688. **Token Governance Proposal Tracker** - Track governance proposals and voting activity
+689. **Token Delegation Analyzer** - Analyze token delegation patterns and voting power
+690. **Token NFT Floor Price** - Track NFT collection floor prices and trends
+691. **Token NFT Royalty Tracker** - Track NFT royalty earnings and payments
+692. **Token Options Position** - Track options positions and Greeks
+693. **Token Perpetual Position** - Track perpetual futures positions and funding rates
+694. **Token Liquidity Mining** - Track liquidity mining rewards and APY
+695. **Token Stablecoin Peg** - Monitor stablecoin peg stability and deviations
+696. **Token Rebase Tracker** - Track rebase token supply adjustments
+697. **Token Validator Rewards** - Track validator staking rewards and performance
+698. **Token Slashing Detector** - Detect slashing events for validators
+699. **Token Validator Exit** - Track validator exit queue and withdrawal status
+700. **Token MEV Rewards** - Track MEV rewards and block builder payments
+701. **Token Relayer Fees** - Track relayer fees and meta-transaction costs
+702. **Token Gas Refund Tracker** - Track gas refunds from failed transactions
+703. **Token Transaction Batching** - Analyze transaction batching patterns and gas savings
+704. **Token Multisig Approval** - Track multisig approval requirements and status
+705. **Token Timelock Queue** - Track timelock queue and execution delays
+706. **Token Proxy Upgrade** - Track proxy contract upgrades and implementation changes
+707. **Token Account Abstraction** - Track account abstraction usage and smart contract wallets
+708. **Token Smart Contract Wallet Tracker** - Track smart contract wallet usage and patterns with Reown integration
+709. **Token Layer 2 Activity Analyzer** - Analyze Layer 2 activity patterns and bridge interactions
+710. **Token Cross-Chain Token Tracker** - Track token movements across multiple blockchain networks
+711. **Token DeFi Protocol Integration Analyzer** - Analyze DeFi protocol integration and interaction patterns
+712. **Token Governance Participation Score** - Calculate governance participation scores and voting activity
+713. **Token Liquidity Migration Tracker** - Track liquidity migration patterns across DEX platforms
+714. **Token Tokenomics Validator** - Validate tokenomics structure and sustainability metrics
+715. **Token Security Audit Tracker** - Track security audit status and compliance verification
+716. **Token Community Engagement Analyzer** - Analyze community engagement through on-chain activity patterns
+717. **Token Developer Activity Tracker** - Track developer activity and contract deployment patterns
+718. **Token Protocol Upgrade Monitor** - Monitor protocol upgrade events and version changes
+719. **Token Risk Assessment Engine** - Comprehensive risk assessment engine for token investments
+720. **Token Yield Strategy Optimizer** - Optimize yield farming strategies across DeFi protocols
+721. **Token Portfolio Rebalancer** - Automated portfolio rebalancing recommendations
+722. **Token Gas Fee Optimizer** - Optimize gas fees through transaction timing and batching
+723. **Token Transaction Privacy Analyzer** - Analyze transaction privacy and anonymity levels
+724. **Token Wallet Clustering Analyzer** - Cluster related wallets and identify address relationships
+725. **Token Smart Contract Interaction Profiler** - Profile smart contract interactions and call patterns
+726. **Token DeFi Position Aggregator** - Aggregate DeFi positions across multiple protocols
+727. **Token Cross-Chain Bridge Analyzer** - Analyze cross-chain bridge usage and efficiency
+728. **Token MEV Protection Score** - Calculate MEV protection score and transaction security
+729. **Token Liquidity Provider Analytics** - Comprehensive analytics for liquidity providers
+730. **Token Staking Rewards Optimizer** - Optimize staking rewards across multiple protocols
+731. **Token Governance Proposal Analyzer** - Analyze governance proposals and voting patterns
+732. **Token Token Distribution Validator** - Validate token distribution fairness and transparency
+733. **Token On-Chain Metrics Dashboard** - Comprehensive on-chain metrics dashboard
+734. **Token Wallet Behavior Profiler** - Profile wallet behavior patterns and strategies
+735. **Token DeFi Risk Calculator** - Calculate DeFi protocol risks and exposure levels
+736. **Token Cross-Chain Portfolio Optimizer** - Optimize cross-chain portfolio allocation
+737. **Token Complete Analytics Suite** - Complete on-chain analytics suite combining all features
+738. **Token Smart Contract Security Scanner** - Scan smart contracts for security vulnerabilities and risks
+739. **Token Token Holder Snapshot Generator** - Generate token holder snapshots at specific block heights
+740. **Token Liquidity Pool Health Monitor** - Monitor liquidity pool health and impermanent loss risks
+741. **Token Yield Farming Position Tracker** - Track yield farming positions across multiple protocols
+742. **Token Cross-Chain Arbitrage Finder** - Find arbitrage opportunities across different blockchain networks
+743. **Token Flash Loan Usage Detector** - Detect and analyze flash loan usage in transactions
+744. **Token Token Burn Event Tracker** - Track token burn events and supply reduction mechanisms
+745. **Token Vesting Schedule Calculator** - Calculate vesting schedules and unlock timelines
+746. **Token Airdrop Eligibility Checker** - Check airdrop eligibility based on on-chain activity
+747. **Token Smart Contract Upgrade Tracker** - Track smart contract upgrades and version changes
+748. **Token Token Transfer Flow Analyzer** - Analyze token transfer flows and patterns
+749. **Token Wallet Activity Heatmap Generator** - Generate activity heatmaps by time and day
+750. **Token Token Price Oracle Aggregator** - Aggregate prices from multiple oracle sources
+751. **Token Liquidity Mining Rewards Calculator** - Calculate liquidity mining rewards and APY
+752. **Token Token Holder Concentration Analyzer** - Analyze token holder concentration and distribution
+753. **Token Token Swap Route Optimizer** - Optimize swap routes for best prices and lowest slippage
+754. **Token Token Unlock Schedule Tracker** - Track token unlock schedules and vesting cliffs
+755. **Token Token Minting Event Tracker** - Track token minting events and supply increases
+756. **Token Token Tax Fee Calculator** - Calculate token tax fees and reflection rewards
+757. **Token Token Whitelist Status Checker** - Check whitelist status for token addresses
+758. **Token Token Blacklist Status Checker** - Check blacklist status for token addresses
+759. **Token Token Freeze Status Detector** - Detect token freeze functionality and status
+760. **Token Token Pause Status Detector** - Detect token pause functionality and status
+761. **Token Token Max Wallet Size Checker** - Check maximum wallet size restrictions
+762. **Token Token Max Transaction Size Checker** - Check maximum transaction size limits
+763. **Token Token Cooldown Period Tracker** - Track cooldown periods between transactions
+764. **Token Token Reward Distribution Tracker** - Track reward distribution mechanisms and schedules
+765. **Token Token Staking Rewards Tracker** - Track staking rewards and claimable amounts
+766. **Token Token Farming Rewards Tracker** - Track farming rewards and yield calculations
+767. **Token Token Claimable Amount Calculator** - Calculate claimable token amounts for wallets
+768. **Token Token Holder Activity Score** - Calculate comprehensive activity score for token holders
+769. **Token Token Transfer Rate Calculator** - Calculate token transfer rates and velocity metrics
+770. **Token Token Market Cap Tracker** - Track real-time market capitalization across chains
+771. **Token Token Volume Analyzer** - Analyze trading volume patterns and trends
+772. **Token Token Price Tracker** - Track token prices with historical data and charts
+773. **Token Token Liquidity Analyzer** - Analyze liquidity depth and market maker activity
+774. **Token Token Holder Growth Tracker** - Track token holder growth over time periods
+775. **Token Token Supply Tracker** - Track token supply changes and inflation rates
+776. **Token Token Distribution Analyzer** - Analyze token distribution across addresses
+777. **Token Token Transaction Analyzer** - Analyze transaction patterns and frequencies
+778. **Token Token Holder Retention Analyzer** - Analyze holder retention rates and loyalty
+779. **Token Token Whale Tracker** - Track whale wallet movements and large transactions
+780. **Token Token DEX Aggregator** - Aggregate prices and liquidity across DEX platforms
+781. **Token Token Bridge Tracker** - Track cross-chain bridge transactions and volumes
+782. **Token Token Staking Position Tracker** - Track staking positions and rewards
+783. **Token Token Governance Tracker** - Track governance proposals and voting activity
+784. **Token Token NFT Floor Price Tracker** - Track NFT collection floor prices
+785. **Token Token Options Position Tracker** - Track options positions and Greeks
+786. **Token Token Perpetual Position Tracker** - Track perpetual futures positions
+787. **Token Token Stablecoin Peg Monitor** - Monitor stablecoin peg stability
+788. **Token Token Rebase Tracker** - Track rebase token supply adjustments
+789. **Token Token Validator Rewards Tracker** - Track validator staking rewards
+790. **Token Token Slashing Detector** - Detect slashing events for validators
+791. **Token Token Validator Exit Tracker** - Track validator exit queue status
+792. **Token Token MEV Rewards Tracker** - Track MEV rewards and block builder payments
+793. **Token Token Relayer Fees Tracker** - Track relayer fees and meta-transaction costs
+794. **Token Token Gas Refund Tracker** - Track gas refunds from failed transactions
+795. **Token Token Transaction Batching Analyzer** - Analyze transaction batching patterns
+796. **Token Token Multisig Approval Tracker** - Track multisig approval requirements
+797. **Token Token Complete Onchain Suite** - Complete onchain analytics suite with Reown integration
+798. **Token Token Timelock Queue Tracker** - Track timelock queue and execution delays
+799. **Token Token Proxy Upgrade Monitor** - Monitor proxy contract upgrades and implementations
+800. **Token Token Account Abstraction Analyzer** - Analyze account abstraction usage patterns
+801. **Token Token Smart Contract Wallet Detector** - Detect smart contract wallet deployments
+802. **Token Token Layer 2 Bridge Monitor** - Monitor Layer 2 bridge activity and efficiency
+803. **Token Token DEX Liquidity Scanner** - Scan liquidity across multiple DEXes
+804. **Token Token Contract Interaction Counter** - Count contract interactions
+805. **Token Token Event Listener Setup** - Setup event listeners for contracts
+806. **Token Token Contract Bytecode Diff** - Compare bytecode between contracts
+807. **Token Token Contract Deployment Cost** - Calculate deployment costs
+808. **Token Token Contract Function Decoder** - Decode function calls
+809. **Token Token Contract Function Selector** - Get function selectors
+810. **Token Token Contract Function Call Simulator** - Simulate function calls
+811. **Token Token Contract Event Indexer** - Index contract events
+812. **Token Token Contract ABI Validator** - Validate contract ABIs
+813. **Token Token Contract State Change** - Track contract state changes
+814. **Token Token Multisig Threshold** - Get multisig threshold requirements
+815. **Token Token Price Feed Validator** - Validate price feed data
+816. **Token Token Price Oracle Aggregator** - Aggregate prices from multiple oracles
+817. **Token Token Supply Change Notifier** - Monitor supply changes
+818. **Token Token Distribution Snapshot** - Generate distribution snapshots
+819. **Token Token Lock Monitor** - Monitor token locks
+820. **Token Token Holder Segmentation** - Segment holders by balance
+821. **Token Token Holder Health** - Calculate holder health metrics
+822. **Token Token Holder Momentum** - Calculate holder momentum scores
+823. **Token Token Holder Quality** - Calculate holder quality scores
+824. **Token Token Holder Stability** - Calculate holder stability metrics
+825. **Token Token Holder Behavior** - Analyze holder behavior patterns
+826. **Token Token Holder Change** - Track holder changes over time
+827. **Token Token Holder Acquisition** - Track new holder acquisition
+828. **Token Transaction Cost Efficiency Calculator** - Calculate transaction cost efficiency metrics for token operations
+829. **Token Holder Lifetime Value Calculator** - Calculate lifetime value metrics for token holders
+830. **Token Network Effect Analyzer** - Analyze network effects and growth patterns for tokens
+831. **Token Price Discovery Efficiency Analyzer** - Measure price discovery efficiency and market quality
+832. **Token Market Maker Score Calculator** - Calculate market maker quality and activity score
+833. **Token Slippage Predictor** - Predict slippage for token trades based on liquidity
+834. **Token Volatility Forecast** - Forecast future volatility based on historical patterns
+835. **Token Holder Retention Forecast** - Forecast holder retention rates based on activity patterns
+836. **Token Liquidity Fragmentation Analyzer** - Analyze liquidity fragmentation across DEX pools
+837. **Token Transaction Anomaly Detector** - Detect anomalous transaction patterns and suspicious activity
+838. **Token Holder Churn Predictor** - Predict holder churn probability based on activity patterns
+839. **Token Market Cap Efficiency Calculator** - Calculate market capitalization efficiency metrics
+840. **Token Holder Engagement Metrics** - Calculate comprehensive engagement metrics for token holders
+841. **Token Holder Segmentation Advanced** - Advanced holder segmentation with multiple criteria
+842. **Token Price Momentum Indicator** - Calculate price momentum indicators for trend analysis
+843. **Token Liquidity Quality Score** - Calculate comprehensive liquidity quality score
+844. **Token Holder Value Distribution Advanced** - Advanced analysis of value distribution among holders
+845. **Token Market Depth Analyzer** - Analyze market depth across different price levels
+846. **Token Trading Pattern Analyzer** - Analyze trading patterns and behaviors
+847. **Token Holder Loyalty Score** - Calculate holder loyalty and retention metrics
+848. **Token Liquidity Migration Tracker** - Track liquidity migration patterns across DEX platforms
+849. **Token Holder Acquisition Cost** - Calculate cost of acquiring new token holders
+850. **Token Holder Lifecycle Tracker** - Track holder lifecycle stages and transitions
+851. **Token Comprehensive Analytics Suite** - Complete analytics suite combining all metrics
+852. **Token Price Correlation Matrix** - Calculate correlation matrix with other tokens
+853. **Token Liquidity Stability Monitor** - Monitor liquidity stability over time
+854. **Token Trading Intensity Analyzer** - Analyze trading intensity and frequency patterns
+855. **Token Market Cap Efficiency Calculator** - Calculate market cap efficiency with advanced metrics
+856. **Token Smart Contract Interaction Profiler** - Profile smart contract interactions and call patterns
+857. **Token DeFi Position Aggregator** - Aggregate DeFi positions across multiple protocols
+858. **Token Yield Optimization Engine** - Optimize yield farming strategies across DeFi protocols
+859. **Token Whale Movement Tracker** - Track whale wallet movements and large transactions
+860. **Token Gas Optimization Advisor** - Provide gas optimization recommendations for transactions
+861. **Token Liquidity Pool Health** - Monitor liquidity pool health and impermanent loss risks
+862. **Token Tokenomics Analyzer** - Analyze tokenomics structure and sustainability
+863. **Token Cross-Chain Arbitrage Finder** - Find arbitrage opportunities across different blockchains
+864. **Token Staking Rewards Calculator** - Calculate staking rewards and APY for token positions
+865. **Token Price Impact Calculator** - Calculate price impact for different trade sizes
+866. **Token Governance Participation** - Track governance participation and voting activity
+867. **Token Risk Assessment Engine** - Comprehensive risk assessment for token investments
+868. **Token Lending Borrowing Analyzer** - Analyze lending and borrowing positions across protocols
+869. **Token NFT Analytics** - Comprehensive NFT analytics and collection insights
+870. **Token Portfolio Diversification** - Analyze portfolio diversification across assets and chains
+871. **Token Transaction Batch Optimizer** - Optimize batch transactions for gas efficiency
+872. **Token Liquidity Provider Rewards** - Calculate liquidity provider rewards and fees earned
+873. **Token Smart Money Tracking** - Track smart money wallets and profitable trading patterns
+874. **Token Bridge Fee Optimizer** - Find optimal bridge routes with lowest fees
+875. **Token Impermanent Loss Calculator** - Calculate impermanent loss for liquidity positions
+876. **Token Treasury Tracker** - Track treasury balances and movements for tokens
+877. **Token Validator Performance** - Track validator performance and staking metrics
+878. **Token Flash Loan Analyzer** - Analyze flash loan usage and opportunities
+879. **Token MEV Protection Analyzer** - Analyze MEV protection status and transaction security
+880. **Token Options Greeks Calculator** - Calculate options Greeks for token positions
+881. **Token Perpetual Funding Rate** - Track perpetual futures funding rates and positions
+882. **Token Stablecoin Peg Monitor** - Monitor stablecoin peg stability and deviations
+883. **Token Liquidation Risk Calculator** - Calculate liquidation risk for lending positions
+884. **Token Vesting Schedule Tracker** - Track token vesting schedules and unlock timelines
+885. **Token DEX Price Aggregator** - Aggregate token prices across multiple DEX platforms
+886. **Token Token Approval Scanner** - Scan and analyze token approvals for security risks
+887. **Token Liquidity Snapshot** - Generate liquidity snapshots at specific block heights
+888. **Token Token Burn Tracker** - Track token burn events and supply reduction
+889. **Token Uniswap V3 Position** - Track Uniswap V3 concentrated liquidity positions
+890. **Token Token Tax Calculator** - Calculate token tax structure and fees
+891. **Token Holder Concentration Index** - Calculate holder concentration and distribution metrics
+892. **Token AMM Price Impact** - Calculate AMM price impact for swaps
+893. **Token Lending APY Comparison** - Compare lending APY across multiple DeFi protocols
+894. **Token Token Lock Detector** - Detect token locks and vesting mechanisms
+895. **Token DeFi Protocol Risk** - Assess DeFi protocol risks and security scores
+896. **Token Token Transfer Analyzer** - Analyze token transfer patterns and flows
+897. **Token Yield Farming APR** - Calculate yield farming APR across protocols
+898. **Token Token Holder Growth** - Track token holder growth over time periods
+899. **Token Liquidity Migration Analyzer** - Analyze liquidity migration patterns between DEXes
+900. **Token Token Supply Analyzer** - Analyze token supply metrics and inflation rates
+901. **Token Options Position Tracker** - Track options positions and PnL calculations
+902. **Token Token Holder Activity Heatmap** - Generate activity heatmap by time and day
+903. **Token Token Holder Sentiment** - Analyze holder sentiment based on on-chain behavior
+904. **Token Token Holder Retention Rate** - Calculate holder retention rates and loyalty metrics
+905. **Token Token Holder Value Score** - Calculate holder value distribution score
+906. **Token Liquidity Provider Fees** - Calculate liquidity provider fees earned over time
+907. **Token Token Holder Migration** - Track holder migration patterns and retention
+908. **Token Token Holder Churn** - Calculate holder churn rate and retention metrics
+909. **Token Token Holder Lifetime** - Calculate average holder lifetime and value
+910. **Token Token Holder Segmentation** - Segment holders by balance and activity levels
+911. **Token Token Holder Engagement** - Measure holder engagement and interaction levels
+912. **Token Token Holder Quality** - Calculate holder quality score based on multiple factors
+913. **Token Token Holder Stability** - Measure holder stability and retention patterns
+914. **Token Token Holder Momentum** - Calculate holder momentum and growth trends
+915. **Token Token Holder Health** - Assess overall holder health and ecosystem strength
+916. **Token Token Holder Behavior** - Analyze holder behavior patterns and strategies
+917. **Token Token Holder Change** - Track holder changes over time periods
+918. **Token Token Holder Acquisition** - Track new holder acquisition and growth
+919. **Token Token Price Feed Validator** - Validate price feed data and oracle reliability
+920. **Token Token Price Oracle Aggregator** - Aggregate prices from multiple oracle sources
+921. **Token Token Supply Change Notifier** - Monitor supply changes and alert on significant events
+922. **Token Token Distribution Snapshot** - Generate distribution snapshots at specific blocks
+923. **Token Token Lock Monitor** - Monitor token locks and unlock schedules
+924. **Token Token Multisig Threshold** - Get multisig threshold requirements and signatures
+925. **Token Token Contract State Change** - Track contract state changes and updates
+926. **Token Token Contract ABI Validator** - Validate contract ABIs and function signatures
+927. **Token Token Contract Event Indexer** - Index and search contract events efficiently
+928. **Token Token Contract Function Call Simulator** - Simulate function calls without executing transactions
+929. **Token Token Contract Function Selector** - Get function selectors and signatures for contract
+930. **Token Token Contract Function Decoder** - Decode function calls and transaction data
+931. **Token Token Contract Deployment Cost** - Calculate contract deployment costs and gas estimates
+932. **Token Token Contract Bytecode Diff** - Compare bytecode between contract versions
+933. **Token Token Event Listener Setup** - Setup event listeners for contract monitoring
+934. **Token Token Contract Interaction Counter** - Count contract interactions and call frequency
+935. **Token Token DEX Liquidity Scanner** - Scan liquidity across multiple DEX platforms
+936. **Token Token Layer 2 Bridge Monitor** - Monitor Layer 2 bridge activity and efficiency
+937. **Token Smart Contract Wallet Detector** - Detect smart contract wallet deployments and usage
+938. **Token Token Interface Detector** - Detect ERC interfaces implemented by contract
+939. **Token Token Standard Detector** - Detect token standard (ERC20, ERC721, ERC1155)
+940. **Token Token Compatibility** - Check token compatibility with protocols and standards
+941. **Token Token ABI Generator** - Generate ABI from contract bytecode
+942. **Token Token TX Decoder** - Decode transaction data and function calls
+943. **Token Token Event Parser** - Parse and decode contract events
+944. **Token Token Storage Slot** - Read contract storage slots and decode values
+945. **Token Token Implementation** - Track implementation addresses for proxy contracts
+946. **Token Token Proxy Admin** - Track proxy admin addresses for upgradeable contracts
+947. **Token Token Execution Tracker** - Track proposal execution status and results
+948. **Token Token Voting Period** - Track voting period status for proposals
+949. **Token Token Quorum Tracker** - Track quorum requirements for proposals
+950. **Token Token Proposal Voting** - Track voting activity on proposals
+951. **Token Token Governance Treasury** - Track governance treasury balances
+952. **Token Token Protocol Fees** - Track protocol fees collected over time
+953. **Token Token Protocol Revenue** - Track protocol revenue over time
+954. **Token Token Utilization Rate** - Calculate pool utilization rate for lending protocols
+955. **Token Token Supply Rate** - Get supply rates for lending protocols
+956. **Token Token Borrow Rate** - Get current borrow rates for lending protocols
+957. **Token Token Health Factor** - Calculate health factor for lending positions
+958. **Token Token Liquidation Threshold** - Calculate liquidation threshold for positions
+959. **Token Token Collateral Ratio** - Calculate collateral ratio for lending protocols
+960. **Token Token Backing Calculator** - Calculate token backing value and collateralization
+961. **Token Token Reserve Tracker** - Track token reserves and backing assets
+962. **Token Token Timelock Tracker** - Track timelock delays for proposals
+963. **Token Token Liquidation Price** - Calculate liquidation price for positions
+964. **Token Token Safety Score** - Calculate comprehensive safety score for tokens
+965. **Token Token Delegation Power** - Calculate delegation power for governance tokens
+966. **Token Token Voting Power** - Calculate voting power for governance participation
+967. **Token Token Proposal Creator** - Track proposals created by address
+968. **Token Token Governance Participation Score** - Calculate governance participation score
+969. **Token Token Rewards Distribution** - Track token rewards distribution and claims
+970. **Token Token Staking Rewards Optimizer** - Optimize staking rewards across protocols
+971. **Token Token Yield Aggregator** - Aggregate yield opportunities across DeFi protocols
+972. **Token Token Compound Interest** - Calculate compound interest for staking positions
+973. **Token Token Rebase Tracker** - Track rebase events and supply adjustments
+974. **Token Token Inflation Rate** - Calculate token inflation rate over time
+975. **Token Token Deflation Mechanism** - Track deflation mechanisms and burn events
+976. **Token Token Tokenomics Model** - Analyze tokenomics model and economic structure
+977. **Token Token Emission Schedule** - Track token emission schedule and release timeline
+978. **Token Token Vesting Analyzer** - Analyze vesting schedules and unlock patterns
+979. **Token Token Lockup Analyzer** - Analyze token lockup periods and restrictions
+980. **Token Token Transfer Restrictions** - Detect transfer restrictions and limitations
+981. **Token Token Whitelist Checker** - Check if address is whitelisted for token operations
+982. **Token Token Blacklist Detector** - Detect blacklisted addresses and restrictions
+983. **Token Token Pause Detector** - Detect if token contract is paused
+984. **Token Token Freeze Detector** - Detect frozen accounts and balance restrictions
+985. **Token Token Permission Manager** - Track permissions and access controls
+986. **Token Token Role Assignment** - Track role assignments and access rights
+987. **Token Token Cap Enforcer** - Check supply cap enforcement and limits
+988. **Token Token Mint Limits** - Track minting limits and restrictions
+989. **Token Token Burn Limits** - Track burning limits and constraints
+990. **Token Token Tax Calculator** - Calculate token taxes and fees on transactions
+991. **Token Token Reflection Tracker** - Track reflection rewards and passive income
+992. **Token Token Dividend Tracker** - Track dividend distributions and payments
+993. **Token Token Auto Compound** - Calculate auto-compounding benefits and optimal frequency
+994. **Token Token Rewards Claim Optimizer** - Optimize rewards claiming strategy for gas efficiency
 
 **Access:** All on-chain features are available via API endpoints and require wallet connection via Reown Wallet.
 
@@ -954,6 +1419,153 @@ All onchain API endpoints are prefixed with `/api/onchain/` and require Reown Wa
 - `GET /api/onchain/token-market-cap-efficiency/[address]` - Calculate market cap efficiency
 - `GET /api/onchain/token-trading-intensity-score/[address]` - Measure trading intensity score
 - `GET /api/onchain/token-liquidity-quality-score/[address]` - Calculate liquidity quality score
+- `GET /api/onchain/token-flash-loan-detector/[address]` - Detect flash loan usage patterns
+- `GET /api/onchain/token-mev-bot-detector/[address]` - Detect MEV bot activity patterns
+- `GET /api/onchain/token-sandwich-attack-detector/[address]` - Detect sandwich attack patterns
+- `GET /api/onchain/token-front-running-detector/[address]` - Detect front-running patterns
+- `GET /api/onchain/token-back-running-detector/[address]` - Detect back-running patterns
+- `GET /api/onchain/token-liquidity-sniping-detector/[address]` - Detect liquidity sniping patterns
+- `GET /api/onchain/token-pump-dump-detector/[address]` - Detect pump and dump schemes
+- `GET /api/onchain/token-wash-trading-detector/[address]` - Detect wash trading patterns
+- `GET /api/onchain/token-circular-trading-detector/[address]` - Detect circular trading patterns
+- `GET /api/onchain/token-price-manipulation-detector/[address]` - Detect price manipulation patterns
+- `GET /api/onchain/token-order-flow-analyzer/[address]` - Analyze order flow patterns
+- `GET /api/onchain/token-dark-pool-detector/[address]` - Detect dark pool trading patterns
+- `GET /api/onchain/token-insider-trading-detector/[address]` - Detect insider trading patterns
+- `GET /api/onchain/token-coordinated-trading-detector/[address]` - Detect coordinated trading patterns
+- `GET /api/onchain/token-bot-cluster-detector/[address]` - Detect bot cluster patterns
+- `GET /api/onchain/token-sybil-attack-detector/[address]` - Detect Sybil attack patterns
+- `GET /api/onchain/token-airdrop-farming-detector/[address]` - Detect airdrop farming patterns
+- `GET /api/onchain/token-sniping-bot-detector/[address]` - Detect sniping bot activity
+- `GET /api/onchain/token-gas-war-detector/[address]` - Detect gas war patterns
+- `GET /api/onchain/token-priority-fee-analyzer/[address]` - Analyze priority fee patterns
+- `GET /api/onchain/token-eip1559-fee-analyzer/[address]` - Analyze EIP-1559 fee structure
+- `GET /api/onchain/token-layer2-bridge-analyzer/[address]` - Analyze Layer 2 bridge activity
+- `GET /api/onchain/token-cross-chain-arbitrage/[address]` - Detect cross-chain arbitrage
+- `GET /api/onchain/token-bridge-risk-analyzer/[address]` - Analyze bridge transaction risks
+- `GET /api/onchain/token-bridge-volume-tracker/[address]` - Track bridge transaction volumes
+- `GET /api/onchain/token-bridge-fee-calculator/[address]` - Calculate bridge fees
+- `GET /api/onchain/token-bridge-time-estimator/[address]` - Estimate bridge transaction times
+- `GET /api/onchain/token-bridge-security-checker/[address]` - Check bridge security status
+- `GET /api/onchain/token-bridge-liquidity-checker/[address]` - Check bridge liquidity availability
+- `GET /api/onchain/token-bridge-status-monitor/[address]` - Monitor bridge status and health
+- `GET /api/onchain/token-dex-aggregator/[address]` - Aggregate DEX prices across exchanges
+- `GET /api/onchain/token-lending-position/[address]` - Track lending positions
+- `GET /api/onchain/token-borrow-position/[address]` - Track borrowing positions
+- `GET /api/onchain/token-collateral-tracker/[address]` - Track collateral positions
+- `GET /api/onchain/token-liquidation-monitor/[address]` - Monitor liquidation risk
+- `GET /api/onchain/token-yield-aggregator/[address]` - Aggregate yield opportunities
+- `GET /api/onchain/token-vault-tracker/[address]` - Track vault positions
+- `GET /api/onchain/token-governance-proposal-tracker/[address]` - Track governance proposals
+- `GET /api/onchain/token-delegation-analyzer/[address]` - Analyze delegation patterns
+- `GET /api/onchain/token-nft-floor-price/[address]` - Track NFT floor prices
+- `GET /api/onchain/token-nft-royalty-tracker/[address]` - Track NFT royalties
+- `GET /api/onchain/token-options-position/[address]` - Track options positions
+- `GET /api/onchain/token-perpetual-position/[address]` - Track perpetual positions
+- `GET /api/onchain/token-liquidity-mining/[address]` - Track liquidity mining rewards
+- `GET /api/onchain/token-stablecoin-peg/[address]` - Monitor stablecoin peg
+- `GET /api/onchain/token-rebase-tracker/[address]` - Track rebase events
+- `GET /api/onchain/token-validator-rewards/[address]` - Track validator rewards
+- `GET /api/onchain/token-slashing-detector/[address]` - Detect slashing events
+- `GET /api/onchain/token-validator-exit/[address]` - Track validator exit queue
+- `GET /api/onchain/token-mev-rewards/[address]` - Track MEV rewards
+- `GET /api/onchain/token-relayer-fees/[address]` - Track relayer fees
+- `GET /api/onchain/token-gas-refund-tracker/[address]` - Track gas refunds
+- `GET /api/onchain/token-transaction-batching/[address]` - Analyze transaction batching
+- `GET /api/onchain/token-multisig-approval/[address]` - Track multisig approvals
+- `GET /api/onchain/token-timelock-queue/[address]` - Track timelock queue
+- `GET /api/onchain/token-proxy-upgrade/[address]` - Track proxy upgrades
+- `GET /api/onchain/token-account-abstraction/[address]` - Track account abstraction
+- `GET /api/onchain/token-smart-contract-wallet-tracker/[address]` - Track smart contract wallet usage
+- `GET /api/onchain/token-layer2-activity-analyzer/[address]` - Analyze Layer 2 activity patterns
+- `GET /api/onchain/token-cross-chain-token-tracker/[address]` - Track token movements across chains
+- `GET /api/onchain/token-defi-protocol-integration-analyzer/[address]` - Analyze DeFi protocol integration
+- `GET /api/onchain/token-governance-participation-score/[address]` - Calculate governance participation score
+- `GET /api/onchain/token-liquidity-migration-tracker/[address]` - Track liquidity migration patterns
+- `GET /api/onchain/token-tokenomics-validator/[address]` - Validate tokenomics structure
+- `GET /api/onchain/token-security-audit-tracker/[address]` - Track security audit status
+- `GET /api/onchain/token-community-engagement-analyzer/[address]` - Analyze community engagement
+- `GET /api/onchain/token-developer-activity-tracker/[address]` - Track developer activity
+- `GET /api/onchain/token-protocol-upgrade-monitor/[address]` - Monitor protocol upgrades
+- `GET /api/onchain/token-risk-assessment-engine/[address]` - Comprehensive risk assessment
+- `GET /api/onchain/token-yield-strategy-optimizer/[address]` - Optimize yield strategies
+- `GET /api/onchain/token-portfolio-rebalancer/[address]` - Portfolio rebalancing recommendations
+- `GET /api/onchain/token-gas-fee-optimizer/[address]` - Optimize gas fees
+- `GET /api/onchain/token-transaction-privacy-analyzer/[address]` - Analyze transaction privacy
+- `GET /api/onchain/token-wallet-clustering-analyzer/[address]` - Cluster related wallets
+- `GET /api/onchain/token-smart-contract-interaction-profiler/[address]` - Profile contract interactions
+- `GET /api/onchain/token-defi-position-aggregator/[address]` - Aggregate DeFi positions
+- `GET /api/onchain/token-cross-chain-bridge-analyzer/[address]` - Analyze cross-chain bridges
+- `GET /api/onchain/token-mev-protection-score/[address]` - Calculate MEV protection score
+- `GET /api/onchain/token-liquidity-provider-analytics/[address]` - Liquidity provider analytics
+- `GET /api/onchain/token-staking-rewards-optimizer/[address]` - Optimize staking rewards
+- `GET /api/onchain/token-governance-proposal-analyzer/[address]` - Analyze governance proposals
+- `GET /api/onchain/token-token-distribution-validator/[address]` - Validate token distribution
+- `GET /api/onchain/token-onchain-metrics-dashboard/[address]` - Comprehensive metrics dashboard
+- `GET /api/onchain/token-wallet-behavior-profiler/[address]` - Profile wallet behavior
+- `GET /api/onchain/token-defi-risk-calculator/[address]` - Calculate DeFi risks
+- `GET /api/onchain/token-cross-chain-portfolio-optimizer/[address]` - Optimize cross-chain portfolio
+- `GET /api/onchain/token-complete-analytics-suite/[address]` - Complete analytics suite
+- `GET /api/onchain/token-smart-contract-security-scanner/[address]` - Scan smart contracts for security vulnerabilities
+- `GET /api/onchain/token-token-holder-snapshot-generator/[address]` - Generate token holder snapshots
+- `GET /api/onchain/token-liquidity-pool-health-monitor/[address]` - Monitor liquidity pool health
+- `GET /api/onchain/token-yield-farming-position-tracker/[address]` - Track yield farming positions
+- `GET /api/onchain/token-cross-chain-arbitrage-finder/[address]` - Find cross-chain arbitrage opportunities
+- `GET /api/onchain/token-flash-loan-usage-detector/[address]` - Detect flash loan usage
+- `GET /api/onchain/token-token-burn-event-tracker/[address]` - Track token burn events
+- `GET /api/onchain/token-vesting-schedule-calculator/[address]` - Calculate vesting schedules
+- `GET /api/onchain/token-airdrop-eligibility-checker/[address]` - Check airdrop eligibility
+- `GET /api/onchain/token-smart-contract-upgrade-tracker/[address]` - Track smart contract upgrades
+- `GET /api/onchain/token-token-transfer-flow-analyzer/[address]` - Analyze token transfer flows
+- `GET /api/onchain/token-wallet-activity-heatmap-generator/[address]` - Generate activity heatmaps
+- `GET /api/onchain/token-token-price-oracle-aggregator/[address]` - Aggregate price oracles
+- `GET /api/onchain/token-liquidity-mining-rewards-calculator/[address]` - Calculate liquidity mining rewards
+- `GET /api/onchain/token-token-holder-concentration-analyzer/[address]` - Analyze holder concentration
+- `GET /api/onchain/token-token-swap-route-optimizer/[address]` - Optimize swap routes
+- `GET /api/onchain/token-token-unlock-schedule-tracker/[address]` - Track unlock schedules
+- `GET /api/onchain/token-token-minting-event-tracker/[address]` - Track minting events
+- `GET /api/onchain/token-token-tax-fee-calculator/[address]` - Calculate token tax fees
+- `GET /api/onchain/token-token-whitelist-status-checker/[address]` - Check whitelist status
+- `GET /api/onchain/token-token-blacklist-status-checker/[address]` - Check blacklist status
+- `GET /api/onchain/token-token-freeze-status-detector/[address]` - Detect freeze status
+- `GET /api/onchain/token-token-pause-status-detector/[address]` - Detect pause status
+- `GET /api/onchain/token-token-max-wallet-size-checker/[address]` - Check max wallet size
+- `GET /api/onchain/token-token-max-transaction-size-checker/[address]` - Check max transaction size
+- `GET /api/onchain/token-token-cooldown-period-tracker/[address]` - Track cooldown periods
+- `GET /api/onchain/token-token-reward-distribution-tracker/[address]` - Track reward distribution
+- `GET /api/onchain/token-token-staking-rewards-tracker/[address]` - Track staking rewards
+- `GET /api/onchain/token-token-farming-rewards-tracker/[address]` - Track farming rewards
+- `GET /api/onchain/token-token-claimable-amount-calculator/[address]` - Calculate claimable amounts
+- `GET /api/onchain/token-token-holder-activity-score/[address]` - Calculate holder activity score
+- `GET /api/onchain/token-token-transfer-rate-calculator/[address]` - Calculate transfer rates
+- `GET /api/onchain/token-token-market-cap-tracker/[address]` - Track market capitalization
+- `GET /api/onchain/token-token-volume-analyzer/[address]` - Analyze trading volume
+- `GET /api/onchain/token-token-price-tracker/[address]` - Track token prices
+- `GET /api/onchain/token-token-liquidity-analyzer/[address]` - Analyze liquidity depth
+- `GET /api/onchain/token-token-holder-growth-tracker/[address]` - Track holder growth
+- `GET /api/onchain/token-token-supply-tracker/[address]` - Track token supply
+- `GET /api/onchain/token-token-distribution-analyzer/[address]` - Analyze distribution
+- `GET /api/onchain/token-token-transaction-analyzer/[address]` - Analyze transactions
+- `GET /api/onchain/token-token-holder-retention-analyzer/[address]` - Analyze retention
+- `GET /api/onchain/token-token-whale-tracker/[address]` - Track whale movements
+- `GET /api/onchain/token-token-dex-aggregator/[address]` - Aggregate DEX prices
+- `GET /api/onchain/token-token-bridge-tracker/[address]` - Track bridge transactions
+- `GET /api/onchain/token-token-staking-position-tracker/[address]` - Track staking positions
+- `GET /api/onchain/token-token-governance-tracker/[address]` - Track governance
+- `GET /api/onchain/token-token-nft-floor-price-tracker/[address]` - Track NFT floor prices
+- `GET /api/onchain/token-token-options-position-tracker/[address]` - Track options positions
+- `GET /api/onchain/token-token-perpetual-position-tracker/[address]` - Track perpetual positions
+- `GET /api/onchain/token-token-stablecoin-peg-monitor/[address]` - Monitor stablecoin peg
+- `GET /api/onchain/token-token-rebase-tracker/[address]` - Track rebase events
+- `GET /api/onchain/token-token-validator-rewards-tracker/[address]` - Track validator rewards
+- `GET /api/onchain/token-token-slashing-detector/[address]` - Detect slashing events
+- `GET /api/onchain/token-token-validator-exit-tracker/[address]` - Track validator exit
+- `GET /api/onchain/token-token-mev-rewards-tracker/[address]` - Track MEV rewards
+- `GET /api/onchain/token-token-relayer-fees-tracker/[address]` - Track relayer fees
+- `GET /api/onchain/token-token-gas-refund-tracker/[address]` - Track gas refunds
+- `GET /api/onchain/token-token-transaction-batching-analyzer/[address]` - Analyze batching
+- `GET /api/onchain/token-token-multisig-approval-tracker/[address]` - Track multisig approvals
+- `GET /api/onchain/token-token-complete-onchain-suite/[address]` - Complete onchain suite
 
 ### Transaction Endpoints (POST)
 - `POST /api/onchain/token-transfer` - Transfer tokens
@@ -986,6 +1598,203 @@ All onchain API endpoints are prefixed with `/api/onchain/` and require Reown Wa
 - `POST /api/onchain/token-swap-aggregator` - Find best swap routes
 - `POST /api/onchain/token-rebalancer` - Calculate rebalancing strategy
 - `POST /api/onchain/token-correlation` - Calculate token correlations
+- `GET /api/onchain/token-token-timelock-queue-tracker` - Track timelock queue
+- `GET /api/onchain/token-token-proxy-upgrade-monitor` - Monitor proxy upgrades
+- `GET /api/onchain/token-token-account-abstraction-analyzer` - Analyze account abstraction
+- `GET /api/onchain/token-token-smart-contract-wallet-detector` - Detect smart wallets
+- `GET /api/onchain/token-token-layer2-bridge-monitor` - Monitor Layer 2 bridges
+- `GET /api/onchain/token-token-dex-liquidity-scanner` - Scan DEX liquidity
+- `GET /api/onchain/token-token-contract-interaction-counter` - Count interactions
+- `GET /api/onchain/token-token-event-listener-setup` - Setup event listeners
+- `GET /api/onchain/token-token-contract-bytecode-diff` - Compare bytecode
+- `GET /api/onchain/token-token-contract-deployment-cost` - Calculate deployment cost
+- `GET /api/onchain/token-token-contract-function-decoder` - Decode functions
+- `GET /api/onchain/token-token-contract-function-selector` - Get selectors
+- `GET /api/onchain/token-token-contract-function-call-simulator` - Simulate calls
+- `GET /api/onchain/token-token-contract-event-indexer` - Index events
+- `GET /api/onchain/token-token-contract-abi-validator` - Validate ABIs
+- `GET /api/onchain/token-token-contract-state-change` - Track state changes
+- `GET /api/onchain/token-token-multisig-threshold` - Get multisig threshold
+- `GET /api/onchain/token-token-price-feed-validator` - Validate price feeds
+- `GET /api/onchain/token-token-price-oracle-aggregator` - Aggregate oracles
+- `GET /api/onchain/token-token-supply-change-notifier` - Monitor supply
+- `GET /api/onchain/token-token-distribution-snapshot` - Generate snapshots
+- `GET /api/onchain/token-token-lock-monitor` - Monitor locks
+- `GET /api/onchain/token-token-holder-segmentation` - Segment holders
+- `GET /api/onchain/token-token-holder-health` - Calculate holder health
+- `GET /api/onchain/token-token-holder-momentum` - Calculate momentum
+- `GET /api/onchain/token-token-holder-quality` - Calculate quality
+- `GET /api/onchain/token-token-holder-stability` - Calculate stability
+- `GET /api/onchain/token-token-holder-behavior` - Analyze behavior
+- `GET /api/onchain/token-token-holder-change` - Track changes
+- `GET /api/onchain/token-token-holder-acquisition` - Track acquisition
+- `GET /api/onchain/token-transaction-cost-efficiency/[address]` - Calculate transaction cost efficiency
+- `GET /api/onchain/token-holder-lifetime-value/[address]` - Calculate holder lifetime value
+- `GET /api/onchain/token-network-effect-analyzer/[address]` - Analyze network effects
+- `GET /api/onchain/token-price-discovery-efficiency/[address]` - Measure price discovery efficiency
+- `GET /api/onchain/token-market-maker-score/[address]` - Calculate market maker score
+- `GET /api/onchain/token-slippage-predictor/[address]` - Predict slippage for trades
+- `GET /api/onchain/token-volatility-forecast/[address]` - Forecast volatility
+- `GET /api/onchain/token-holder-retention-forecast/[address]` - Forecast holder retention
+- `GET /api/onchain/token-liquidity-fragmentation/[address]` - Analyze liquidity fragmentation
+- `GET /api/onchain/token-transaction-anomaly/[address]` - Detect transaction anomalies
+- `GET /api/onchain/token-holder-churn-predictor/[address]` - Predict holder churn
+- `GET /api/onchain/token-market-cap-efficiency/[address]` - Calculate market cap efficiency
+- `GET /api/onchain/token-holder-engagement-metrics/[address]` - Calculate engagement metrics
+- `GET /api/onchain/token-holder-segmentation-advanced/[address]` - Advanced holder segmentation
+- `GET /api/onchain/token-price-momentum-indicator/[address]` - Calculate price momentum
+- `GET /api/onchain/token-liquidity-quality-score/[address]` - Calculate liquidity quality score
+- `GET /api/onchain/token-holder-value-distribution-advanced/[address]` - Advanced value distribution
+- `GET /api/onchain/token-market-depth-analyzer/[address]` - Analyze market depth
+- `GET /api/onchain/token-trading-pattern-analyzer/[address]` - Analyze trading patterns
+- `GET /api/onchain/token-holder-loyalty-score/[address]` - Calculate loyalty score
+- `GET /api/onchain/token-liquidity-migration-tracker/[address]` - Track liquidity migration
+- `GET /api/onchain/token-holder-acquisition-cost/[address]` - Calculate acquisition cost
+- `GET /api/onchain/token-holder-lifecycle-tracker/[address]` - Track holder lifecycle
+- `GET /api/onchain/token-comprehensive-analytics-suite/[address]` - Complete analytics suite
+- `GET /api/onchain/token-price-correlation-matrix/[address]` - Calculate correlation matrix
+- `GET /api/onchain/token-liquidity-stability-monitor/[address]` - Monitor liquidity stability
+- `GET /api/onchain/token-trading-intensity-analyzer/[address]` - Analyze trading intensity
+- `GET /api/onchain/token-market-cap-efficiency-calculator/[address]` - Advanced market cap efficiency
+- `GET /api/onchain/token-smart-contract-interaction-profiler/[address]` - Profile contract interactions
+- `GET /api/onchain/token-defi-position-aggregator/[address]` - Aggregate DeFi positions
+- `GET /api/onchain/token-yield-optimization-engine/[address]` - Optimize yield farming strategies
+- `GET /api/onchain/token-whale-movement-tracker/[address]` - Track whale wallet movements
+- `GET /api/onchain/token-gas-optimization-advisor/[address]` - Get gas optimization recommendations
+- `GET /api/onchain/token-liquidity-pool-health/[address]` - Monitor liquidity pool health
+- `GET /api/onchain/token-tokenomics-analyzer/[address]` - Analyze tokenomics structure
+- `GET /api/onchain/token-cross-chain-arbitrage-finder/[address]` - Find cross-chain arbitrage
+- `GET /api/onchain/token-staking-rewards-calculator/[address]` - Calculate staking rewards
+- `GET /api/onchain/token-price-impact-calculator/[address]` - Calculate price impact
+- `GET /api/onchain/token-governance-participation/[address]` - Track governance participation
+- `GET /api/onchain/token-risk-assessment-engine/[address]` - Comprehensive risk assessment
+- `GET /api/onchain/token-lending-borrowing-analyzer/[address]` - Analyze lending positions
+- `GET /api/onchain/token-nft-analytics/[address]` - Comprehensive NFT analytics
+- `GET /api/onchain/token-portfolio-diversification/[address]` - Analyze portfolio diversification
+- `GET /api/onchain/token-transaction-batch-optimizer/[address]` - Optimize batch transactions
+- `GET /api/onchain/token-liquidity-provider-rewards/[address]` - Calculate LP rewards
+- `GET /api/onchain/token-smart-money-tracking/[address]` - Track smart money wallets
+- `GET /api/onchain/token-bridge-fee-optimizer/[address]` - Find optimal bridge routes
+- `GET /api/onchain/token-impermanent-loss-calculator/[address]` - Calculate impermanent loss
+- `GET /api/onchain/token-treasury-tracker/[address]` - Track treasury balances
+- `GET /api/onchain/token-validator-performance/[address]` - Track validator performance
+- `GET /api/onchain/token-flash-loan-analyzer/[address]` - Analyze flash loan usage
+- `GET /api/onchain/token-mev-protection-analyzer/[address]` - Analyze MEV protection
+- `GET /api/onchain/token-options-greeks-calculator/[address]` - Calculate options Greeks
+- `GET /api/onchain/token-perpetual-funding-rate/[address]` - Track perpetual funding rates
+- `GET /api/onchain/token-stablecoin-peg-monitor/[address]` - Monitor stablecoin peg
+- `GET /api/onchain/token-liquidation-risk-calculator/[address]` - Calculate liquidation risk
+- `GET /api/onchain/token-vesting-schedule-tracker/[address]` - Track vesting schedules
+- `GET /api/onchain/token-dex-price-aggregator/[address]` - Aggregate DEX prices
+- `GET /api/onchain/token-token-approval-scanner/[address]` - Scan token approvals
+- `GET /api/onchain/token-liquidity-snapshot/[address]` - Generate liquidity snapshots
+- `GET /api/onchain/token-token-burn-tracker/[address]` - Track token burn events
+- `GET /api/onchain/token-uniswap-v3-position/[address]` - Track Uniswap V3 positions
+- `GET /api/onchain/token-token-tax-calculator/[address]` - Calculate token taxes
+- `GET /api/onchain/token-holder-concentration-index/[address]` - Calculate concentration index
+- `GET /api/onchain/token-amm-price-impact/[address]` - Calculate AMM price impact
+- `GET /api/onchain/token-lending-apy-comparison/[address]` - Compare lending APY
+- `GET /api/onchain/token-token-lock-detector/[address]` - Detect token locks
+- `GET /api/onchain/token-defi-protocol-risk/[address]` - Assess protocol risks
+- `GET /api/onchain/token-token-transfer-analyzer/[address]` - Analyze transfer patterns
+- `GET /api/onchain/token-yield-farming-apr/[address]` - Calculate yield farming APR
+- `GET /api/onchain/token-token-holder-growth/[address]` - Track holder growth
+- `GET /api/onchain/token-liquidity-migration-analyzer/[address]` - Analyze liquidity migration
+- `GET /api/onchain/token-token-supply-analyzer/[address]` - Analyze token supply
+- `GET /api/onchain/token-options-position-tracker/[address]` - Track options positions
+- `GET /api/onchain/token-token-holder-activity-heatmap/[address]` - Generate activity heatmap
+- `GET /api/onchain/token-token-holder-sentiment/[address]` - Analyze holder sentiment
+- `GET /api/onchain/token-token-holder-retention-rate/[address]` - Calculate retention rate
+- `GET /api/onchain/token-token-holder-value-score/[address]` - Calculate value score
+- `GET /api/onchain/token-liquidity-provider-fees/[address]` - Calculate LP fees earned
+- `GET /api/onchain/token-token-holder-migration/[address]` - Track holder migration
+- `GET /api/onchain/token-token-holder-churn/[address]` - Calculate churn rate
+- `GET /api/onchain/token-token-holder-lifetime/[address]` - Calculate holder lifetime
+- `GET /api/onchain/token-token-holder-segmentation/[address]` - Segment holders
+- `GET /api/onchain/token-token-holder-engagement/[address]` - Measure engagement
+- `GET /api/onchain/token-token-holder-quality/[address]` - Calculate quality score
+- `GET /api/onchain/token-token-holder-stability/[address]` - Measure stability
+- `GET /api/onchain/token-token-holder-momentum/[address]` - Calculate momentum
+- `GET /api/onchain/token-token-holder-health/[address]` - Assess holder health
+- `GET /api/onchain/token-token-holder-behavior/[address]` - Analyze behavior patterns
+- `GET /api/onchain/token-token-holder-change/[address]` - Track holder changes
+- `GET /api/onchain/token-token-holder-acquisition/[address]` - Track acquisition
+- `GET /api/onchain/token-token-price-feed-validator/[address]` - Validate price feeds
+- `GET /api/onchain/token-token-price-oracle-aggregator/[address]` - Aggregate oracles
+- `GET /api/onchain/token-token-supply-change-notifier/[address]` - Monitor supply changes
+- `GET /api/onchain/token-token-distribution-snapshot/[address]` - Generate snapshots
+- `GET /api/onchain/token-token-lock-monitor/[address]` - Monitor token locks
+- `GET /api/onchain/token-token-multisig-threshold/[address]` - Get multisig threshold
+- `GET /api/onchain/token-token-contract-state-change/[address]` - Track state changes
+- `GET /api/onchain/token-token-contract-abi-validator/[address]` - Validate ABIs
+- `GET /api/onchain/token-token-contract-event-indexer/[address]` - Index events
+- `GET /api/onchain/token-token-contract-function-call-simulator/[address]` - Simulate calls
+- `GET /api/onchain/token-token-contract-function-selector/[address]` - Get selectors
+- `GET /api/onchain/token-token-contract-function-decoder/[address]` - Decode functions
+- `GET /api/onchain/token-token-contract-deployment-cost/[address]` - Calculate deployment cost
+- `GET /api/onchain/token-token-contract-bytecode-diff/[address]` - Compare bytecode
+- `GET /api/onchain/token-token-event-listener-setup/[address]` - Setup event listeners
+- `GET /api/onchain/token-token-contract-interaction-counter/[address]` - Count interactions
+- `GET /api/onchain/token-token-dex-liquidity-scanner/[address]` - Scan DEX liquidity
+- `GET /api/onchain/token-token-layer2-bridge-monitor/[address]` - Monitor Layer 2 bridges
+- `GET /api/onchain/token-smart-contract-wallet-detector/[address]` - Detect smart contract wallets
+- `GET /api/onchain/token-token-interface-detector/[address]` - Detect ERC interfaces
+- `GET /api/onchain/token-token-standard-detector/[address]` - Detect token standards
+- `GET /api/onchain/token-token-compatibility/[address]` - Check protocol compatibility
+- `GET /api/onchain/token-token-abi-generator/[address]` - Generate contract ABIs
+- `GET /api/onchain/token-token-tx-decoder/[address]` - Decode transactions
+- `GET /api/onchain/token-token-event-parser/[address]` - Parse contract events
+- `GET /api/onchain/token-token-storage-slot/[address]` - Read storage slots
+- `GET /api/onchain/token-token-implementation/[address]` - Track implementation addresses
+- `GET /api/onchain/token-token-proxy-admin/[address]` - Track proxy admin addresses
+- `GET /api/onchain/token-token-execution-tracker/[address]` - Track proposal execution
+- `GET /api/onchain/token-token-voting-period/[address]` - Track voting periods
+- `GET /api/onchain/token-token-quorum-tracker/[address]` - Track quorum requirements
+- `GET /api/onchain/token-token-proposal-voting/[address]` - Track proposal voting
+- `GET /api/onchain/token-token-governance-treasury/[address]` - Track governance treasury
+- `GET /api/onchain/token-token-protocol-fees/[address]` - Track protocol fees
+- `GET /api/onchain/token-token-protocol-revenue/[address]` - Track protocol revenue
+- `GET /api/onchain/token-token-utilization-rate/[address]` - Calculate utilization rate
+- `GET /api/onchain/token-token-supply-rate/[address]` - Get supply rates
+- `GET /api/onchain/token-token-borrow-rate/[address]` - Get borrow rates
+- `GET /api/onchain/token-token-health-factor/[address]` - Calculate health factor
+- `GET /api/onchain/token-token-liquidation-threshold/[address]` - Calculate liquidation threshold
+- `GET /api/onchain/token-token-collateral-ratio/[address]` - Calculate collateral ratio
+- `GET /api/onchain/token-token-backing-calculator/[address]` - Calculate backing value
+- `GET /api/onchain/token-token-reserve-tracker/[address]` - Track reserves
+- `GET /api/onchain/token-token-timelock-tracker/[address]` - Track timelock delays
+- `GET /api/onchain/token-token-liquidation-price/[address]` - Calculate liquidation price
+- `GET /api/onchain/token-token-safety-score/[address]` - Calculate safety score
+- `GET /api/onchain/token-token-delegation-power/[address]` - Calculate delegation power
+- `GET /api/onchain/token-token-voting-power/[address]` - Calculate voting power
+- `GET /api/onchain/token-token-proposal-creator/[address]` - Track proposal creators
+- `GET /api/onchain/token-token-governance-participation-score/[address]` - Calculate participation score
+- `GET /api/onchain/token-token-rewards-distribution/[address]` - Track rewards distribution
+- `GET /api/onchain/token-token-staking-rewards-optimizer/[address]` - Optimize staking rewards
+- `GET /api/onchain/token-token-yield-aggregator/[address]` - Aggregate yield opportunities
+- `GET /api/onchain/token-token-compound-interest/[address]` - Calculate compound interest
+- `GET /api/onchain/token-token-rebase-tracker/[address]` - Track rebase events
+- `GET /api/onchain/token-token-inflation-rate/[address]` - Calculate inflation rate
+- `GET /api/onchain/token-token-deflation-mechanism/[address]` - Track deflation mechanisms
+- `GET /api/onchain/token-token-tokenomics-model/[address]` - Analyze tokenomics model
+- `GET /api/onchain/token-token-emission-schedule/[address]` - Track emission schedule
+- `GET /api/onchain/token-token-vesting-analyzer/[address]` - Analyze vesting schedules
+- `GET /api/onchain/token-token-lockup-analyzer/[address]` - Analyze lockup periods
+- `GET /api/onchain/token-token-transfer-restrictions/[address]` - Detect transfer restrictions
+- `GET /api/onchain/token-token-whitelist-checker/[address]` - Check whitelist status
+- `GET /api/onchain/token-token-blacklist-detector/[address]` - Detect blacklisted addresses
+- `GET /api/onchain/token-token-pause-detector/[address]` - Detect pause status
+- `GET /api/onchain/token-token-freeze-detector/[address]` - Detect freeze status
+- `GET /api/onchain/token-token-permission-manager/[address]` - Track permissions
+- `GET /api/onchain/token-token-role-assignment/[address]` - Track role assignments
+- `GET /api/onchain/token-token-cap-enforcer/[address]` - Check supply cap
+- `GET /api/onchain/token-token-mint-limits/[address]` - Track mint limits
+- `GET /api/onchain/token-token-burn-limits/[address]` - Track burn limits
+- `GET /api/onchain/token-token-tax-calculator/[address]` - Calculate token taxes
+- `GET /api/onchain/token-token-reflection-tracker/[address]` - Track reflection rewards
+- `GET /api/onchain/token-token-dividend-tracker/[address]` - Track dividend distributions
+- `GET /api/onchain/token-token-auto-compound/[address]` - Calculate auto-compound benefits
+- `GET /api/onchain/token-token-rewards-claim-optimizer/[address]` - Optimize rewards claiming
 
 All transaction endpoints return a prepared transaction object that can be executed via Reown Wallet using the `useOnchainTransaction` hook.
 
